@@ -1,0 +1,435 @@
+section{
+  font-weight: 400;
+  line-height: 1.5;
+  font-size: 1.6rem;
+  color: inherit;
+  font-family: Poppins,sans-serif!important;
+  margin: 0;
+  padding: 0;
+ 
+  background: linear-gradient(180deg,#1a1c1d,rgba(26,28,29,0));
+  mix-blend-mode: normal;
+  position: relative;
+  height: 680px;
+}
+
+.HomeBanner_imageContainer__jGCwF{
+  position: relative;
+  margin: 0;
+  width: 100%;
+  overflow: hidden;
+  height: 680px;
+}
+
+.HomeBanner_imageContainer__jGCwF span{
+display: block;
+overflow: hidden;
+width: initial;
+height: initial;
+background: none;
+opacity: 1;
+border: 0px;
+margin: 0px;
+padding: 0px;
+position: absolute;
+inset: 0px;
+}
+
+.HomeBanner_imageContainer__jGCwF img{
+
+position: absolute;
+
+padding: 0px;
+border: none;
+margin: auto;
+display: block;
+width: 0px;
+height: 0px;
+min-width: 100%;
+max-width: 100%;
+min-height: 100%;
+max-height: 100%;
+object-fit: cover;
+}
+
+
+.HomeBanner_bannerContent__U267C{
+margin: 0;
+position: absolute;
+left: 0;
+bottom: 21%;
+top: 6%;
+padding: 32px 72px;
+width: 100%;
+bottom: 21%;
+  top: 6%;
+}
+
+.HomeBanner_bannerContent__U267C h1{
+  
+  
+  font-weight: 600;
+  margin-bottom: 8px;
+  text-transform: capitalize;
+  color: #fff;
+  font-size: 3rem;
+  line-height: 150%;
+}
+
+.HomeBanner_bannerSubHeading__xWsg2 {
+  
+
+  color: #fff;
+  width: 56%;
+  font-size: 1.5rem;
+  line-height: 150%;
+  margin-bottom: 48px;
+  
+}
+
+.HomeBanner_statsWrapper__kalzE{
+ 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+  margin-bottom: 42px;
+}
+.HomeBanner_listWrapper__40RV8{
+  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  width: 48%;
+  margin-bottom: 12px;
+  margin-right: 8px;
+}
+
+.HomeBanner_iconWrapper__qPaUy{
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  font-weight: 400;
+  line-height: 1.5;
+  font-size: 1.6rem;
+  color: inherit;
+  font-family: Poppins,sans-serif!important;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  position: relative;
+  margin-right: 8px;
+  min-width: 12px;
+  min-height: 12px;
+}
+.greenTick_bg {
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  font-weight: 400;
+  line-height: 1.5;
+  font-size: 1.6rem;
+  color: inherit;
+  font-family: Poppins,sans-serif!important;
+  box-sizing: border-box;
+  display: block;
+  max-width: 100%;
+  width: initial;
+  height: initial;
+  background: none;
+  opacity: 1;
+  border: 0px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.greenTick_icon{
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  font-weight: 400;
+  line-height: 1.5;
+  font-size: 1.6rem;
+  color: inherit;
+  font-family: Poppins,sans-serif!important;
+  position: absolute;
+  inset: 0px;
+  box-sizing: border-box;
+  padding: 0px;
+  border: none;
+  margin: auto;
+  display: block;
+  width: 0px;
+  height: 0px;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 100%;
+  max-height: 100%;
+}
+
+.HomeBanner_listText__JbAa7{
+ 
+  margin: 0;
+
+  
+  font-weight: 400;
+  text-transform: capitalize;
+  color: #fff;
+  font-size: 1rem;
+ 
+}
+
+.HomeBanner_bannerBtnDesktop__K9OFK{
+ 
+  cursor: pointer;
+  background: linear-gradient(270.01deg,#418a41,#4ca94c 100.03%);
+  border: 1px solid rgba(98,198,83,.5);
+  box-shadow: 4px 8px 30px rgba(0,0,0,.1);
+  border-radius: 8px;
+  padding: 12px 0;
+  width: 23%;
+}
+
+.HomeBanner_btnText__yMOPW{
+ 
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+ 
+  font-weight: 600;
+  text-align: center;
+  color: #fff;
+  font-size: 1.3rem;
+  
+}
+
+
+
+.HomeBanner_bannerBottomWrapper__j7nzu{
+  
+
+ 
+  margin: 0;
+  box-sizing: border-box;
+  background: rgba(34,34,34,.4);
+  mix-blend-mode: normal;
+  backdrop-filter: blur(20px);
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 32px 64px;
+  height: 120px;
+}
+
+.HomeBanner_googleReview__OobHe{
+  margin: 0;
+  padding: 0;
+  position: relative;
+  width: 200px;
+  height: 65px;
+  display: flex;
+  justify-content: flex-start;
+  margin-right: 100px;
+}
+.HomeBanner_googleReview__OobHe span{
+
+  
+  display: block;
+  overflow: hidden;
+  width: initial;
+  height: initial;
+  background: none;
+  opacity: 1;
+  border: 0px;
+  margin: 0px;
+  padding: 0px;
+  position: absolute;
+  inset: 0px;
+}
+
+.HomeBanner_googleReview__OobHe img{
+ 
+  position: absolute;
+  inset: 0px;
+ 
+  padding: 0px;
+  border: none;
+  margin: auto;
+  display: block;
+  width: 0px;
+  height: 0px;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.HomeBanner_reviewItem__ekYq1{
+  
+
+  display: flex;
+  width: 20%;
+  padding-right: 12px;
+  align-items: flex-start;
+  border-right: 1px solid #6c6c6c;
+  flex: 1 1;
+  justify-content: center;
+}
+
+.HomeBanner_iconWrapper__qPaUy{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 8px;
+  margin-right: 16px;
+}
+.reviewItemIcon{
+  
+  position: absolute;
+  inset: 0px;
+  
+  padding: 0px;
+  border: none;
+  margin: auto;
+  display: block;
+  width: 0px;
+  height: 0px;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 100%;
+  max-height: 100%;
+}
+.reviewItemIcon_bg{
+  
+
+  display: block;
+  max-width: 100%;
+  width: initial;
+  height: initial;
+  background: none;
+  opacity: 1;
+  border: 0px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.HomeBanner_counting__90xWw{
+
+font-weight: 500;
+font-size: 30px;
+line-height: 45px;
+letter-spacing: .01em;
+color: #fff;
+}
+.HomeBanner_desc__owCdk{
+
+  margin: 0;
+
+  box-sizing: border-box;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #fff;
+}
+
+
+
+@media screen and (max-width: 768px) {
+  section {
+    height: auto; /* Adjust height as per content */
+  }
+  .HomeBanner_imageContainer__jGCwF {
+    position: relative;
+    margin: 0;
+    width: 100%;
+    overflow: hidden;
+    height: 480px;}
+  .HomeBanner_bannerContent__U267C {
+    height: 80%;
+    bottom: 15%; /* Adjust position */
+    top: 5%; /* Adjust position */
+    padding: 16px; /* Adjust padding */
+  }
+  .HomeBanner_bannerContent__U267C h1 {
+    font-size: 2.5rem; /* Adjust font size */
+  }
+  .HomeBanner_bannerSubHeading__xWsg2 {
+    width: 100%; /* Adjust width to take full space */
+    font-size: 1.2rem; /* Adjust font size */
+    margin-bottom: 24px; /* Adjust margin */
+  }
+  .HomeBanner_statsWrapper__kalzE {
+    width: 100%; /* Take full width */
+    margin-bottom: 32px; /* Adjust margin */
+  }
+  .HomeBanner_listWrapper__40RV8 {
+    width: 100%; /* Take full width */
+    margin-bottom: 12px; /* Adjust margin */
+    margin-right: 0; /* Remove right margin */
+  }
+
+  .HomeBanner_bannerBtnDesktop__K9OFK {
+    width: 100%; /* Take full width */
+  }
+  .HomeBanner_bannerBottomWrapper__j7nzu{
+    display: none;
+  }
+}
+
+/* For screens with a width less than or equal to 480px (e.g., smartphones) */
+@media screen and (max-width: 480px) {
+
+  .HomeBanner_imageContainer__jGCwF {
+    position: relative;
+    margin: 0;
+    width: 100%;
+    overflow: hidden;
+    height: 480px;}
+  .HomeBanner_bannerContent__U267C {
+    padding: 8px; /* Adjust padding */
+  }
+
+  .HomeBanner_bannerContent__U267C h1 {
+    font-size: 2rem; /* Adjust font size */
+  }
+
+  .HomeBanner_bannerSubHeading__xWsg2 {
+    font-size: 1.2rem; /* Adjust font size */
+  }
+
+  .HomeBanner_statsWrapper__kalzE {
+    margin-bottom: 24px; /* Adjust margin */
+  }
+
+  .HomeBanner_listWrapper__40RV8 {
+    font-size: 1.2rem; /* Adjust font size */
+    margin-bottom: 8px; /* Adjust margin */
+  }
+
+  .HomeBanner_bannerBtnDesktop__K9OFK {
+    padding: 8px 0; /* Adjust padding */
+    width: 100%; /* Take full width */
+  }
+
+  .HomeBanner_bannerBottomWrapper__j7nzu{
+    display: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+

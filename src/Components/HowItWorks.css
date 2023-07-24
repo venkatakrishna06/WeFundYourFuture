@@ -1,0 +1,47 @@
+/* App.css */
+
+  
+  .howItWorksContainer {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .HowItWorks_leftContainer {
+    flex-basis: 40%;
+    display: block;
+  }
+  
+  .HowItWorks_leftContainer img{
+    margin-top: 5%;
+   width: 100%;
+  }
+  .HowItWorks_rightContainer {
+    flex-basis: 60%;
+    
+  
+  }
+
+  .right_title{
+    color: #222222;
+    font-family: sans-serif;
+    font-weight: bold;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .howItWorksContainer {
+      /* Hide the left container on small screens */
+      flex-direction: column;
+    }
+  
+    .HowItWorks_leftContainer {
+      display: none;
+    }
+  
+    .HowItWorks_rightContainer {
+      /* Adjust the width of the right container to take full width on small screens */
+      flex: 100%;
+    }
+  }
+
+  

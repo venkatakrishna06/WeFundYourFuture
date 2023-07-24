@@ -1,0 +1,141 @@
+/* styles.css */
+.popup-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    min-height: 87vh;
+    background-image: url('https://di2vt7hcm6vs0.cloudfront.net/v2/bg/course-loan-landing-gradient-bg.png');
+    background-size: cover;
+  }
+  .ReactModal__Overlay {
+    background-color: rgba(0, 0, 0, 0.432) !important; /* Semi-transparent overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .ReactModal__Content{
+    border-radius: 25px !important;
+    padding: 0px !important;
+}
+  
+  .left-div {
+    color: white;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .right-div {
+    color: white;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* form.css */
+.form-container {
+     color: black;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 700px;
+
+  }
+  
+  .form-title {
+   
+    
+  }
+  
+  .form-subtitle {
+    
+  }
+  
+  .input-group {
+    margin-bottom: 10px;
+  }
+  
+  .label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .input-group input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px !important;
+  }
+  
+  .error-message {
+    color: red;
+    margin-top: 5px;
+  }
+  
+  
+
+
+
+
+
+
+  .close-button {
+    position: absolute;
+    top: 4%;
+    right: 4%;
+    font-size: 1.5rem;
+    background-color: grey;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+  }
+
+  @media (max-width: 768px) {
+    .popup-container {
+      flex-direction: column;
+      min-height: 101vh;
+    
+    }
+    .close-button {
+        position: absolute;
+        top: 2%;
+        right: 4%;
+        font-size: 1rem;
+        background-color: grey;
+        border-radius: 50%;
+        border: none;
+        cursor: pointer;
+      }
+  
+    .left-div,
+    .right-div {
+      flex: initial;
+      width: 100%;
+    }
+
+
+    .ReactModal__Overlay {
+        background-color: rgba(0, 0, 0, 0.432) !important; /* Semi-transparent overlay */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    
+      .ReactModal__Content {
+        position: relative;
+        top: 2% !important;
+        left: 2% !important;
+        right: 2% !important;
+        bottom: 2% !important;
+   max-width: 100% !important;
+        border: none;
+        border-radius: 0;
+        padding: 0;
+        background: none;
+        overflow: hidden;
+      }
+  }
+  

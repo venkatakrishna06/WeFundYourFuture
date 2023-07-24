@@ -1,0 +1,21 @@
+.trusted_title{
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.trusted_subtitle{
+    font-size: 16px;
+}
+
+
+@media screen and (max-width: 600px) {
+    .grid-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .title{
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+  }

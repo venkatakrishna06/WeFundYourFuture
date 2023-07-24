@@ -1,0 +1,27 @@
+/* Base styles for the footer */
+.footer {
+    background-color: #343a40;
+    width: 100% !important;
+  }
+  
+  footer p {
+    font-size: 14px;
+  }
+  
+  footer h5 {
+    color: #fff;
+    font-size: 18px;
+  }
+  
+  .footer-section {
+    margin-bottom: 30px;
+  }
+  
+  /* Responsive adjustments for smaller screens */
+  @media screen and (max-width: 992px) {
+    .row-cols-md-5 {
+      /* Change the number of columns to 2 on screens with a maximum width of 992px */
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+  }
+  

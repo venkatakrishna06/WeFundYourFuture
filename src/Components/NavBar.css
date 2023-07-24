@@ -1,0 +1,33 @@
+/* Custom NavBar styles */
+.navbar {
+    background-color: #fff; /* White background */
+  }
+  
+  .navbar-logo {
+    height: 40px; /* Adjust the height as needed */
+    width: auto;
+    padding: 8px;
+  }
+  nav .nav-link{
+    font-weight: bold;
+    color: #000 !important; 
+   
+  }
+ 
+
+  .navbar-options a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #000 !important; /* Black color for the options */
+    font-size: 1 rem ;
+    
+  }
+  
+  .submit-app-btn{
+    border: 1px solid green;
+    border-radius: 20px;
+
+
+  }
+  /* Add any additional custom styles here */
+  

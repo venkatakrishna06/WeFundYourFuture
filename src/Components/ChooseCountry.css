@@ -1,0 +1,26 @@
+.grid-item1 {
+    display: flex;
+   width: 100%;
+   padding: 18px 10%;
+    height: 75px;
+    border: 1px solid rgba(223, 218, 218, 0.848);
+    border-radius: 15px;
+  }
+  .grid-item1:hover {
+    cursor: pointer;
+    border: 1px solid #e9ecef;
+    transform: scale(1.05); }
+  
+  .grid-item1 img{
+    width: 25%;
+    height: 100%;
+  
+    
+  }
+  
+  .country-name {
+    padding-top: 4px;
+    font-size: 18px; 
+  }
+
+  

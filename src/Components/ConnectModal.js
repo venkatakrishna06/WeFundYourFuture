@@ -8,6 +8,9 @@ const ConnectModal = ({ isOpen, onRequestClose }) => {
     const [fullName, setFullName] = useState('');
   const [email, setEmail] = useState('');
   const [phoneNumber, setPhoneNumber] = useState('');
+  const [originCountry, setOriginCountry] = useState('');
+  const [destination, setDestination] = useState('');
+  
   const [loanAmount, setLoanAmount] = useState('');
   const [errors, setErrors] = useState({});
 
@@ -16,6 +19,22 @@ const ConnectModal = ({ isOpen, onRequestClose }) => {
 
     if (!fullName) {
       errors.fullName = 'Full name is required';
+    }
+    if (!email) {
+      errors.email = 'Email is required';
+    }
+    if (!phoneNumber) {
+      errors.phoneNumber = 'Phone number is required';
+    }
+    if (!originCountry) {
+      errors.originCountry = 'Origin is required';
+    }
+    if (!destination) {
+      errors.destination = ' Destination is required';
+    }
+
+    if (!loanAmount) {
+      errors.loanAmount = ' Loan Amount is required';
     }
 
     // Add more validations for email, phone number, and loan amount if needed
@@ -33,9 +52,6 @@ const ConnectModal = ({ isOpen, onRequestClose }) => {
       console.log('Form submitted successfully!');
     }
   };
-
-
-
 
 
 
@@ -60,8 +76,8 @@ const ConnectModal = ({ isOpen, onRequestClose }) => {
           {/* Content for the right div */}
 
           <div className="form-container">
-      <h1 className="form-title">Form Title</h1>
-      <p className="form-subtitle">Form Subtitle</p>
+      <h2 className="form-title">Start your journey now</h2>
+      <p className="form-subtitle">Help us with a few details.</p>
       <form onSubmit={handleSubmit}>
         <div className="input-group">
           <label className="label" htmlFor="fullName">
@@ -69,6 +85,7 @@ const ConnectModal = ({ isOpen, onRequestClose }) => {
           </label>
           <input
             className="input"
+            placeholder='Jennifer'
             type="text"
             id="fullName"
             value={fullName}
@@ -81,23 +98,88 @@ const ConnectModal = ({ isOpen, onRequestClose }) => {
 
         {/* Add input fields for email, phone number, and loan amount with similar structure */}
         {/* For example: */}
-        <div className="input-group">
+       <div className="input-group">
           <label className="label" htmlFor="email">
-            Email
+           Email Address
           </label>
           <input
             className="input"
-            type="email"
+            placeholder='Jenmifer@example.co '
+            type="text"
             id="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
-          {errors.email && (
+          {errors.fullName && (
             <p className="error-message">{errors.email}</p>
           )}
+        </div>
+        <div className="input-group">
+          <label className="label" htmlFor="phoneNo">
+            Phone Number
+          </label>
+          <input
+            className="input"
+            placeholder='7893281389'
+            type="number"
+            id="phoneNo"
+            value={phoneNumber}
+            onChange={(e) => setPhoneNumber(e.target.value)}
+          />
+          {errors.phoneNumber && (
+            <p className="error-message">{errors.phoneNumber}</p>
+          )}
         </div> 
-        
-        <button type="submit">Submit</button>
+        <div className="input-group">
+          <label className="label" htmlFor="originCountry">
+            Origin Country
+          </label>
+          <input
+            className="input"
+            placeholder='India'
+            type="text"
+            id="originCountry"
+            value={originCountry}
+            onChange={(e) => setOriginCountry(e.target.value)}
+          />
+          {errors.originCountry && (
+            <p className="error-message">{errors.originCountry}</p>
+          )}
+        </div> 
+        <div className="input-group">
+          <label className="label" htmlFor="destination">
+            Destination Country
+          </label>
+          <input
+            className="input"
+            placeholder='USA'
+            type="text"
+            id="destination"
+            value={destination}
+            onChange={(e) => setDestination(e.target.value)}
+          />
+          {errors.destination && (
+            <p className="error-message">{errors.destination}</p>
+          )}
+        </div> 
+
+        <div className="input-group">
+          <label className="label" htmlFor="loanAmount">
+            Loan required
+          </label>
+          <input
+            className="input"
+            placeholder='20000'
+            type="number"
+            id="loanAmount"
+            value={loanAmount}
+            onChange={(e) => setLoanAmount(e.target.value)}
+          />
+          {errors.loanAmount && (
+            <p className="error-message">{errors.loanAmount}</p>
+          )}
+        </div> 
+        <button type="submit" className='modal-form-submiotBtn'>Submit</button>
       </form>
     </div>
        

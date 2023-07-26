@@ -3,12 +3,14 @@
   
   .howItWorksContainer {
     margin-top: 50px;
+    margin-bottom: 50px;
     display: flex;
     flex-wrap: wrap;
   }
   
   .HowItWorks_leftContainer {
-    flex-basis: 40%;
+    flex-basis: 50%;
+    padding-left: 2%;
     display: block;
   }
   
@@ -17,7 +19,7 @@
    width: 100%;
   }
   .HowItWorks_rightContainer {
-    flex-basis: 60%;
+    flex-basis: 50%;
     
   
   }

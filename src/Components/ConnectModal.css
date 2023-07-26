@@ -3,8 +3,8 @@
     position: relative;
     display: flex;
     justify-content: center;
-    min-height: 87vh;
-    background-image: url('https://di2vt7hcm6vs0.cloudfront.net/v2/bg/course-loan-landing-gradient-bg.png');
+    min-height: 90vh;
+    background-image: url('https://cdn.pixabay.com/photo/2016/05/25/07/56/start-1414148_1280.jpg');
     background-size: cover;
   }
   .ReactModal__Overlay {
@@ -19,12 +19,17 @@
     padding: 0px !important;
 }
   
-  .left-div {
-    color: white;
+  .left-div{
+    
     flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .left-div h2{
+    color: #ffffff;
+    font-size: 4rem;
+    font-weight: bold;
   }
   
   .right-div {
@@ -41,41 +46,61 @@
     background-color: #ffffff;
     padding: 20px;
     border-radius: 10px;
-    max-width: 700px;
+    min-width: 100px;
+    max-width: 370px;
 
   }
   
   .form-title {
-   
+    margin-bottom: 0px;
+    font-size: 1.2rem;
     
   }
   
   .form-subtitle {
-    
-  }
-  
-  .input-group {
-    margin-bottom: 10px;
+    color: rgba(5, 5, 5, 0.687);
+    font-size: 0.9rem;
   }
   
   .label {
+    font-size: 0.9rem;
     display: block;
-    margin-bottom: 5px;
+    
   }
+  .input-group{
+    margin-bottom: 8px;
+  }
+
   
   .input-group input{
-    width: 100%;
+    width: 90%;
+    height: 39px;
     padding: 10px;
     border: 1px solid #ccc;
-    border-radius: 10px !important;
+    border-radius: 5px !important;
   }
   
+
+  .modal-form-submiotBtn{
+    color: #ffffff;
+    font-weight: bold;
+    margin-top: 5%;
+margin-left: 30%;
+   
+    padding: 5px 15px;
+    background: green;
+    border: 1px solid green;
+    border-radius: 5px;
+  }
   .error-message {
     color: red;
-    margin-top: 5px;
+    margin: 0px !important;
+    font-size: 0.9rem;
   }
-  
-  
+
+
+
+
 
 
 
@@ -92,6 +117,19 @@
     border: none;
     cursor: pointer;
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   @media (max-width: 768px) {
     .popup-container {
@@ -115,8 +153,6 @@
       flex: initial;
       width: 100%;
     }
-
-
     .ReactModal__Overlay {
         background-color: rgba(0, 0, 0, 0.432) !important; /* Semi-transparent overlay */
         display: flex;

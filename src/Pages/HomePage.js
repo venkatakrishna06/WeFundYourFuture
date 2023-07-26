@@ -8,28 +8,19 @@ import TrustedPartners from "../Components/TrustedPartners";
 import WhyChooseUs from "../Components/WhyChooseUs";
 import './HomePage.css';
 
-function HomePage(){
+function HomePage() {
 
-    return(
-        <div> 
-            <NavBar></NavBar>
+    return (
+        <div>
             <HomeBanner></HomeBanner>
-  
             <HowItWorks></HowItWorks>
-            
-            
-
-            
-       <TrustedPartners></TrustedPartners>
-       <WhyChooseUs></WhyChooseUs>
-       <ChooseCountry></ChooseCountry>
-       <Footer></Footer>
-            
-
-
+            <TrustedPartners></TrustedPartners>
+            <WhyChooseUs></WhyChooseUs>
+            <ChooseCountry></ChooseCountry>
+            <Footer></Footer>
         </div>
 
 
     )
 }
- export default HomePage;
+export default HomePage;

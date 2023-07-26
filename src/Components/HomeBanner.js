@@ -11,6 +11,7 @@ const HomeBanner = () => {
   };
 
   const closePopup = () => {
+    window.location.reload(false);
     setIsOpen(false);
   };
 
@@ -23,26 +24,18 @@ const HomeBanner = () => {
           alt="Banner"
           data-element="Image"
 
-          src="https://unicreds.com/_next/image?url=https%3A%2F%2Fdi2vt7hcm6vs0.cloudfront.net%2Fv2%2Fpages%2FLanding%20Page%2FAssets%2FhomeBannerNew.png&w=3840&q=75"
+          src="https://cdn.pixabay.com/photo/2016/10/18/11/24/university-student-1749912_1280.jpg"
           decoding="async"
           data-nimg="fill"
           sizes="100vw"
-          srcSet="
-          https://unicreds.com/_next/image?url=https%3A%2F%2Fdi2vt7hcm6vs0.cloudfront.net%2Fv2%2Fpages%2FLanding%20Page%2FAssets%2FhomeBannerNew.png&w=640&q=75 640w,
-          https://unicreds.com/_next/image?url=https%3A%2F%2Fdi2vt7hcm6vs0.cloudfront.net%2Fv2%2Fpages%2FLanding%20Page%2FAssets%2FhomeBannerNew.png&w=750&q=75 750w,
-          https://unicreds.com/_next/image?url=https%3A%2F%2Fdi2vt7hcm6vs0.cloudfront.net%2Fv2%2Fpages%2FLanding%20Page%2FAssets%2FhomeBannerNew.png&w=828&q=75 828w,
-          https://unicreds.com/_next/image?url=https%3A%2F%2Fdi2vt7hcm6vs0.cloudfront.net%2Fv2%2Fpages%2FLanding%20Page%2FAssets%2FhomeBannerNew.png&w=1080&q=75 1080w,
-          https://unicreds.com/_next/image?url=https%3A%2F%2Fdi2vt7hcm6vs0.cloudfront.net%2Fv2%2Fpages%2FLanding%20Page%2FAssets%2FhomeBannerNew.png&w=1200&q=75 1200w,
-          https://unicreds.com/_next/image?url=https%3A%2F%2Fdi2vt7hcm6vs0.cloudfront.net%2Fv2%2Fpages%2FLanding%20Page%2FAssets%2FhomeBannerNew.png&w=1920&q=75 1920w,
-          https://unicreds.com/_next/image?url=https%3A%2F%2Fdi2vt7hcm6vs0.cloudfront.net%2Fv2%2Fpages%2FLanding%20Page%2FAssets%2FhomeBannerNew.png&w=2048&q=75 2048w,
-          https://unicreds.com/_next/image?url=https%3A%2F%2Fdi2vt7hcm6vs0.cloudfront.net%2Fv2%2Fpages%2FLanding%20Page%2FAssets%2FhomeBannerNew.png&w=3840&q=75 3840w"
+         
          
         />
         <noscript></noscript>
       </div>
       <div className="HomeBanner_bannerContent__U267C">
-        <h1 className="HomeBanner_bannerHeading__LKqDp">Funding Dreams<br /> Fuelling Careers</h1>
-        <p className="HomeBanner_bannerSubHeading__xWsg2">Fuel Your Career By Funding Your Abroad Education With Us</p>
+        <h1 className="HomeBanner_bannerHeading__LKqDp"> Building Your Path to Success</h1>
+        <p className="HomeBanner_bannerSubHeading__xWsg2">BP Finance's Student Loans - Empowering Students with Affordable Educational Funding</p>
         <div className="HomeBanner_statsWrapper__kalzE">
           <div className="HomeBanner_listWrapper__40RV8">
             <span className="HomeBanner_iconWrapper__qPaUy">

@@ -1,11 +1,12 @@
 /* Custom NavBar styles */
-.navbar {
-    background-color: #fff; /* White background */
-  }
-  
+nav{
+padding: 2% !important;
+}
+
   .navbar-logo {
-    height: 40px; /* Adjust the height as needed */
-    width: auto;
+    height: 100%; /* Adjust the height as needed */
+    transform: scale(4);
+    width: 20%;
     padding: 8px;
   }
   nav .nav-link{
@@ -13,12 +14,15 @@
     color: #000 !important; 
    
   }
- 
+  .brand{
+    margin-left: 8%;
+    width: 30%;
+  }
 
   .navbar-options a {
     text-decoration: none;
     font-weight: bold;
-    color: #000 !important; /* Black color for the options */
+    color: #000 !important; 
     font-size: 1 rem ;
     
   }
@@ -29,5 +33,5 @@
 
 
   }
-  /* Add any additional custom styles here */
+  
   

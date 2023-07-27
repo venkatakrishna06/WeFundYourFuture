@@ -2,9 +2,22 @@
 import './ConnectModal.css'; // Import the CSS file
 import React, { useState }  from 'react';
 import Modal from 'react-modal';
-
+import { initializeApp, cert } from 'firebase/app'
+import {getFirestore} from 'firebase/firestore'
+import { collection, getDocs,addDoc } from "firebase/firestore";
 
 const ConnectModal = ({ isOpen, onRequestClose }) => {
+    const firebaseConfig = {
+        apiKey: "AIzaSyDJa0wWs8YV4ImbYj55Uq6bgnIcN-nCHFk",
+        authDomain: "we-fund-your-future.firebaseapp.com",
+        projectId: "we-fund-your-future",
+        storageBucket: "we-fund-your-future.appspot.com",
+        messagingSenderId: "1351502469",
+        appId: "1:1351502469:web:d00049527062ab9d8df7ec",
+        measurementId: "G-R6BXGKFH24"
+    };
+      const app = initializeApp(firebaseConfig);
+    const db = getFirestore(app);
     const [fullName, setFullName] = useState('');
   const [email, setEmail] = useState('');
   const [phoneNumber, setPhoneNumber] = useState('');
@@ -44,13 +57,23 @@ const ConnectModal = ({ isOpen, onRequestClose }) => {
     return Object.keys(errors).length === 0;
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-
-    if (validateForm()) {
-      // Handle form submission here
-      console.log('Form submitted successfully!');
-    }
+  const handleSubmit =   async (e) => {
+      e.preventDefault();
+      if (validateForm()) {
+          // Handle form submission here
+          console.log('Form submitted successfully!');
+          const docRef = await addDoc(collection(db, "students_enquired"), {
+           fullName, email, phoneNumber
+          });
+          console.log("Document written with ID: ", docRef.id);
+          await getDocs(collection(db, "students_enquired"))
+              .then((querySnapshot)=>{
+                  const newData = querySnapshot.docs
+                      .map((doc) => ({...doc.data(), id:doc.id }));
+                  console.log(newData);
+              })
+          debugger;
+      }
   };
 
 

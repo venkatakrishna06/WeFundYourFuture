@@ -18,13 +18,6 @@ function App() {
     
     </BrowserRouter>
     </div>
-    
-
-    
-
-   
-      
-
   );
 }
 

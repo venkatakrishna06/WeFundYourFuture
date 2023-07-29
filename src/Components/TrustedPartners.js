@@ -12,29 +12,14 @@ function TrustedPartners() {
         },{
             'partnerLogo':'https://unicreds.com/_next/image?url=https%3A%2F%2Fdi2vt7hcm6vs0.cloudfront.net%2Fv2%2Fpages%2FPartners%2FInCred.jpg&w=640&q=75'
         },
-        {
-            'partnerLogo':'https://unicreds.com/_next/image?url=https%3A%2F%2Fdi2vt7hcm6vs0.cloudfront.net%2Fv2%2Fpages%2FPartners%2FCredenc.jpg&w=640&q=75'
-        },
-        {
-            'partnerLogo':'https://unicreds.com/_next/image?url=https%3A%2F%2Fdi2vt7hcm6vs0.cloudfront.net%2Fv2%2Fpages%2FPartners%2FICICI.jpg&w=640&q=75'
-        },
-        {
-            'partnerLogo':'https://unicreds.com/_next/image?url=https%3A%2F%2Fdi2vt7hcm6vs0.cloudfront.net%2Fv2%2Fpages%2FPartners%2FAxis.jpg&w=640&q=75'
-        },
+        
         {
             'partnerLogo':'https://unicreds.com/_next/image?url=https%3A%2F%2Fdi2vt7hcm6vs0.cloudfront.net%2Fv2%2Fpages%2FPartners%2FProdigy.jpg&w=640&q=75'
-        },
-        {
-            'partnerLogo':'https://unicreds.com/_next/image?url=https%3A%2F%2Fdi2vt7hcm6vs0.cloudfront.net%2Fv2%2Fpages%2FPartners%2FIDFC.jpg&w=640&q=75'
         },
 
         {
             'partnerLogo':'https://unicreds.com/_next/image?url=https%3A%2F%2Fdi2vt7hcm6vs0.cloudfront.net%2Fv2%2Fpages%2FPartners%2FMPower.jpg&w=640&q=75'
-        },
-        {
-            'partnerLogo':'https://unicreds.com/_next/image?url=https%3A%2F%2Fdi2vt7hcm6vs0.cloudfront.net%2Fv2%2Fpages%2FPartners%2FBOB.jpg&w=640&q=75'
-        },
-
+        }
 
 
     ]

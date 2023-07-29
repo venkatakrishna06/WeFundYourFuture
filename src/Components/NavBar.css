@@ -1,13 +1,13 @@
 /* Custom NavBar styles */
 nav{
-padding: 2% !important;
+padding: 1% !important;
 }
 
   .navbar-logo {
     height: 100%; /* Adjust the height as needed */
     transform: scale(4);
     width: 20%;
-    padding: 8px;
+   
   }
   nav .nav-link{
     font-weight: bold;
@@ -16,7 +16,7 @@ padding: 2% !important;
   }
   .brand{
     margin-left: 8%;
-    width: 30%;
+    width: 20%;
   }
 
   .navbar-options a {

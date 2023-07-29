@@ -3,8 +3,8 @@
     position: relative;
     display: flex;
     justify-content: center;
-    min-height: 90vh;
-    background-image: url('https://cdn.pixabay.com/photo/2016/05/25/07/56/start-1414148_1280.jpg');
+    max-height: 89vh;
+    background-image:  linear-gradient(to right, rgba(31, 31, 32, 0.641), rgba(185, 180, 185, 0.165)), url('https://cdn.pixabay.com/photo/2016/05/25/07/56/start-1414148_1280.jpg');
     background-size: cover;
   }
   .ReactModal__Overlay {
@@ -18,119 +18,60 @@
     border-radius: 25px !important;
     padding: 0px !important;
 }
+
+.modal-left-content{
   
+  margin-left: 5%;
+  color: white;
+}
+.modal-left-content .sub-text{
+  font-weight: bold;
+  font-size: 2rem;
+  margin-left: 10%;
+}
+  .modal-left-content ul{
+    margin-left: 7%;
+    font-weight: 500;
+
+  }
   .left-div{
     
-    flex: 1;
+    flex: 40%;
     display: flex;
     justify-content: center;
     align-items: center;
   }
   .left-div h2{
-    color: #ffffff;
-    font-size: 4rem;
+    color: white;
+    font-size: 3rem;
     font-weight: bold;
   }
   
   .right-div {
-    color: white;
-    flex: 1;
+    color: black;
+    flex: 60%;
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
   /* form.css */
-.form-container {
-     color: black;
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 10px;
-    min-width: 100px;
-    max-width: 370px;
-
+  .form-container{
+    margin-top: 18%;
   }
-  
-  .form-title {
-    margin-bottom: 0px;
-    font-size: 1.2rem;
-    
-  }
-  
-  .form-subtitle {
-    color: rgba(5, 5, 5, 0.687);
-    font-size: 0.9rem;
-  }
-  
-  .label {
-    font-size: 0.9rem;
-    display: block;
-    
-  }
-  .input-group{
-    margin-bottom: 8px;
-  }
-
-  
-  .input-group input{
-    width: 90%;
-    height: 39px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px !important;
-  }
-  
-
-  .modal-form-submiotBtn{
-    color: #ffffff;
-    font-weight: bold;
-    margin-top: 5%;
-margin-left: 30%;
-   
-    padding: 5px 15px;
-    background: green;
-    border: 1px solid green;
-    border-radius: 5px;
-  }
-  .error-message {
-    color: red;
-    margin: 0px !important;
-    font-size: 0.9rem;
-  }
-
-
-
-
-
-
-
-
 
 
   .close-button {
+    background: none;
     position: absolute;
-    top: 4%;
-    right: 4%;
-    font-size: 1.5rem;
-    background-color: grey;
-    border-radius: 50%;
+    top: 1%;
+    right: 2%;
+ 
+    font-size: 2.5rem;
+    
     border: none;
     cursor: pointer;
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   @media (max-width: 768px) {
     .popup-container {
       flex-direction: column;
@@ -142,12 +83,9 @@ margin-left: 30%;
         top: 2%;
         right: 4%;
         font-size: 1rem;
-        background-color: grey;
-        border-radius: 50%;
         border: none;
         cursor: pointer;
       }
-  
     .left-div,
     .right-div {
       flex: initial;

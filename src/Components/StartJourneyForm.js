@@ -1,7 +1,22 @@
 import './StartJourneyForm.css';
 import React, { useState } from 'react';
-
+import { initializeApp } from 'firebase/app'
+import {getFirestore} from 'firebase/firestore'
+import { collection, getDocs,addDoc } from "firebase/firestore";
+import { ref, getDownloadURL, uploadBytesResumable, getStorage } from "firebase/storage";
 const StartJourneyForm = () => {
+  const firebaseConfig = {
+    apiKey: "AIzaSyDJa0wWs8YV4ImbYj55Uq6bgnIcN-nCHFk",
+    authDomain: "we-fund-your-future.firebaseapp.com",
+    projectId: "we-fund-your-future",
+    storageBucket: "we-fund-your-future.appspot.com",
+    messagingSenderId: "1351502469",
+    appId: "1:1351502469:web:d00049527062ab9d8df7ec",
+    measurementId: "G-R6BXGKFH24"
+  };
+  const app = initializeApp(firebaseConfig);
+  const db = getFirestore(app);
+  const storage = getStorage(app);
   const [formData, setFormData] = useState({
     first_name: '',
     last_name: '',
@@ -46,7 +61,7 @@ const StartJourneyForm = () => {
     }));
   };
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
     const newErrors = {};
 
@@ -81,10 +96,42 @@ const StartJourneyForm = () => {
     } else {
       // Handle form submission
       console.log('Form submitted:', formData);
-      // Add your API call or further processing here.
-    }
-  };
+      let userData = {...formData};
+      const customFile = formData.file_input;
+      delete userData['file_input']
 
+      const docRef = await addDoc(collection(db, "students_enquired"), {...userData});
+      console.log("Document written with ID: ", docRef.id);
+
+
+      const storageRef = ref(storage, `files/${docRef.id}`);
+      const uploadTask = uploadBytesResumable(storageRef, customFile);
+
+      uploadTask.on("state_changed",
+          (snapshot) => {
+            const progress =
+                Math.round((snapshot.bytesTransferred / snapshot.totalBytes) * 100);
+            console.log(progress);
+          },
+          (error) => {
+            alert(error);
+          },
+          () => {
+            getDownloadURL(uploadTask.snapshot.ref).then((downloadURL) => {
+              console.log(downloadURL)
+            });
+          }
+      );
+
+
+      await getDocs(collection(db, "students_enquired"))
+          .then((querySnapshot) => {
+            const newData = querySnapshot.docs
+                .map((doc) => ({...doc.data(), id: doc.id}));
+            console.log(newData);
+          })
+    }
+  }
   return (
     <form onSubmit={handleSubmit}>
       <div className="container form-container">

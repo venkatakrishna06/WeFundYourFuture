@@ -1,0 +1,72 @@
+/* ThreeDivsRow.css */
+
+/* Main container for the row */
+.steps-container {
+    margin-top: 3%;
+    display: flex;
+    align-items: center;
+ 
+    /* Add any additional styles for the main container here */
+  }
+  
+  /* 1st div with the title */
+  .title-div {
+   width: 20%;
+ 
+    color: #418a41;
+    /* Add your styles for the title div here */
+  }
+  
+  .title-div p{
+    font-weight: bold;
+    font-size: 1.7rem ;
+    /* Add your styles for the title text here */
+  }
+  
+  /* 2nd div with the dot */
+  .dot-div {
+    width: 7%;
+    /* Add your styles for the dot div here */
+  }
+  
+  .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.363);
+    /* Add any additional styles for the dot here */
+  }
+  
+  /* 3rd div with the icon and text */
+  .icon-text-div {
+    width: 100%;
+border: 1px solid rgba(0, 0, 0, 0.448);
+padding: 1% 3%;
+border-radius: 10px;
+
+    display: flex;
+    align-items: center; /* Vertically center the icon and text */
+    /* Add any additional styles for the icon-text div here */
+  }
+  
+  .icon {
+    margin-right: 10px; /* Add space between icon and text */
+    /* Add any styles for the icon container here */
+  }
+  
+  .icon img {
+    width: 30px;
+    height: 30px;
+    /* Add any additional styles for the icon image here */
+  }
+  
+  .step-text {
+    padding-top: 5%;
+    font-size: 1.1rem;
+    /* Add any styles for the text container here */
+  }
+  
+  .text p {
+    /* Add any styles for the text paragraph here */
+  }
+  

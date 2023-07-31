@@ -1,5 +1,6 @@
 import React from "react";
 import ChooseCountry from "../Components/ChooseCountry";
+import FloatingWhatsappIcon from "../Components/FloatingWhatsappIcon";
 import Footer from "../Components/Footer";
 import HomeBanner from "../Components/HomeBanner";
 import HowItWorks from "../Components/HowItWorks";
@@ -18,6 +19,7 @@ function HomePage() {
             <WhyChooseUs></WhyChooseUs>
             <ChooseCountry></ChooseCountry>
             <Footer></Footer>
+            <FloatingWhatsappIcon></FloatingWhatsappIcon>
         </div>
 
 

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Modal, Button } from 'react-bootstrap';
 import './NavBar.css';
+import { Link } from 'react-router-dom';
 
 const NavBar = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -23,7 +24,6 @@ const NavBar = () => {
   const toggleModal = () => {
     setIsModalOpen(!isModalOpen);
   };
-
   return (
     <nav className="navbar navbar-expand-lg">
       <div className="container">
@@ -32,7 +32,6 @@ const NavBar = () => {
         </a>
         {isSmallScreen ? (
           <>
-
             <button className="navbar-toggler" type="button" onClick={toggleModal}>
               <span className="navbar-toggler-icon"></span>
             </button>
@@ -41,9 +40,9 @@ const NavBar = () => {
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav ms-auto">
               <li className="nav-item">
-                <a className="nav-link" href="/about">
+                <Link className="nav-link" to="/about">
                   About Us
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="#">
@@ -56,9 +55,11 @@ const NavBar = () => {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+
+             
+              <Link className="nav-link" target={'_blank'} to="https://api.whatsapp.com/send?phone=9703628658">
                   Contact Us
-                </a>
+                </Link>
               </li>
             </ul>
             <div className="navbar-button">
@@ -74,9 +75,9 @@ const NavBar = () => {
           <Modal.Body>
             <ul className="navbar-nav">
               <li className="nav-item">
-                <a className="nav-link" href="#">
-                  Student Loan
-                </a>
+              <Link className="nav-link" to="/about">
+                  About Us
+                </Link>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="#">
@@ -89,9 +90,9 @@ const NavBar = () => {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+              <Link className="nav-link" target={'_blank'} to="https://api.whatsapp.com/send?phone=9703628658">
                   Contact Us
-                </a>
+                </Link>
               </li>
             </ul>
             <div className="navbar-button">

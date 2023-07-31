@@ -1,0 +1,118 @@
+/* body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+.form-container {
+  max-width: 500px;
+  background-color: white;
+border-radius: 7%;
+  padding: 10px;
+  margin-bottom: 20%;
+}
+
+
+
+.form-group {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.form-group label {
+  position: absolute;
+  pointer-events: none;
+  left: 10px;
+  bottom: 7px;
+  font-size: 14px;
+  transition: 0.2s ease all;
+  color: #666;
+}
+
+.form-group input,
+.form-group select {
+  border: none;
+  border-bottom: 1px solid #000;
+  background-color: transparent;
+  font-size: 16px;
+  width: 100%;
+  outline: none;
+}
+
+.form-group input:focus{
+  border-bottom: 1px solid #007bff;
+}
+
+.form-group input:focus ~ label,
+.form-group select:focus ~ label,
+.form-group input:valid ~ label,
+.form-group select:valid ~ label {
+  
+  bottom: 30px;
+  left: 5px;
+  font-size: 14px;
+  color: #007bff
+}
+
+.submit-button {
+  display: block;
+  margin-left: 30%;
+  width: 50%;
+  padding: 5px 10px;
+  border-radius: 8px;
+  border: none;
+  background:linear-gradient(270.01deg,#418a41,#4ca94c 100.03%);
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+input:focus, select:focus {
+  outline: none !important; /* Remove default focus outline */
+  box-shadow: none!important; /* Add a custom red box-shadow to indicate focus */
+}
+
+
+.file-input-label {
+  display: inline-block;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+/* Add CSS for error messages */
+.error-msg {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+
+
+@media (max-width: 767px) {
+  .form-container {
+    font-size: 24px;
+    padding: 3% 0.6%;
+  
+    width: 90%;
+    border-radius: none;
+  }
+
+  .form-group {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .form-group label {
+    font-size: 18px;
+    bottom: 5px;
+  }
+
+  .file-input-label {
+    display: block;
+    margin-top: 10px;
+  }
+}

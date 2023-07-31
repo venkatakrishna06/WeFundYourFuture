@@ -249,7 +249,6 @@ const StartJourneyForm = () => {
               id="file-input"
               name="file_input"
               className="file-input"
-              accept=".zip"
               onChange={handleFileChange}
               
             />

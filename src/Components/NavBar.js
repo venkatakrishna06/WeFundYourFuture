@@ -40,7 +40,12 @@ const NavBar = () => {
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav ms-auto">
               <li className="nav-item">
-                <Link className="nav-link" to="/about">
+                <Link className="nav-link" to="/">
+                  Home
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/about" target="_blank" rel="noopener noreferrer">
                   About Us
                 </Link>
               </li>
@@ -63,19 +68,14 @@ const NavBar = () => {
           <Modal.Body>
             <ul className="navbar-nav">
               <li className="nav-item">
-              <Link className="nav-link" to="/about">
-                  About Us
+                <Link className="nav-link" to="/">
+                  Home
                 </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
-                  Study Abroad
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">
-                  Student Accommodation
-                </a>
+              <Link className="nav-link" to="/about">
+                  About Us
+                </Link>
               </li>
               <li className="nav-item">
               <Link className="nav-link" target={'_blank'} to="https://api.whatsapp.com/send?phone=9703628658">

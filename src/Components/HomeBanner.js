@@ -22,18 +22,6 @@ const HomeBanner = () => {
     <section className="HomeBanner_homeBanner__8Wzs_">
       
       <div className="HomeBanner_imageContainer__jGCwF">
-     
-        <img
-          alt="Banner"
-          data-element="Image"
-
-          src="https://cdn.pixabay.com/photo/2016/10/18/11/24/university-student-1749912_1280.jpg"
-          decoding="async"
-          data-nimg="fill"
-          sizes="100vw"
-         
-         
-        />
         <noscript></noscript>
       </div>
       <div className="HomeBanner_bannerContent__U267C">

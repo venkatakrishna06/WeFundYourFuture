@@ -4,13 +4,7 @@ import React, { useState }  from 'react';
 import StartJourneyForm from './StartJourneyForm';
 import Modal from 'react-modal';
 
-
 const ConnectModal = ({ isOpen, onRequestClose }) => {
-
-
-
-
-
 
   return (
     <Modal

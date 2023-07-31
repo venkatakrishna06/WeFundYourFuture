@@ -3,7 +3,7 @@
   line-height: 1.5;
   font-size: 1.6rem;
   color: inherit;
-  font-family: Poppins,sans-serif!important;
+  font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
   mix-blend-mode: normal;
@@ -20,6 +20,13 @@ display: none;
   width: 100%;
   overflow: hidden;
   height: 680px;
+  background-image: linear-gradient(to right,
+  rgba(31, 31, 32, 0.641),
+  rgba(185, 180, 185, 0.165)),
+  url('https://cdn.pixabay.com/photo/2016/10/18/11/24/university-student-1749912_1280.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 10%;
 }
 
 .HomeBanner_imageContainer__jGCwF span{
@@ -110,8 +117,7 @@ bottom: 21%;
 }
 
 .HomeBanner_iconWrapper__qPaUy{
-  
-  font-family: Poppins,sans-serif!important;
+  font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -124,7 +130,7 @@ bottom: 21%;
 .greenTick_bg {
   
   color: inherit;
-  font-family: Poppins,sans-serif!important;
+  font-family: 'Roboto', sans-serif;
   box-sizing: border-box;
   display: block;
   max-width: 100%;

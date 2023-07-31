@@ -6,12 +6,8 @@
     border: 1px solid rgba(36, 35, 35, 0.848);
     border-radius: 15px;
   }
-  .grid-item1:hover {
-    cursor: pointer;
-    border: 1px solid #e9ecef;
-    transform: scale(1.05); }
-  
-  .grid-item1 img{
+
+.grid-item1 img{
     width: 25%;
     height: 100%;
   
@@ -24,4 +20,3 @@
     font-size: 18px; 
   }
 
-  

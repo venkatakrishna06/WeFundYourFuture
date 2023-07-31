@@ -45,26 +45,14 @@ const NavBar = () => {
                 </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
-                  Study Abroad
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">
-                  Student Accomidation
-                </a>
-              </li>
-              <li className="nav-item">
-
-             
               <Link className="nav-link" target={'_blank'} to="https://api.whatsapp.com/send?phone=9703628658">
                   Contact Us
                 </Link>
               </li>
             </ul>
-            <div className="navbar-button">
-              <button className="btn submit-app-btn">Begin Loan Application</button>
-            </div>
+            {/*<div className="navbar-button">*/}
+            {/*  <button className="btn submit-app-btn">Begin Loan Application</button>*/}
+            {/*</div>*/}
           </div>
         )}
 

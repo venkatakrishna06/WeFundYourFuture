@@ -64,13 +64,12 @@
   .number {
    
    
-    /* font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif; */
+
   }
   .card-text{
     font-size: 1.2rem;
   }
   .text-data {
-    /* font-family: "Open Sans", sans-serif; */
     color: black;
     font-weight: bold;
     line-height: 2em;
@@ -87,7 +86,6 @@
   
   .title {
     font-size: 1.5rem;
-font-family: sans-serif;
 color: #403d39;
 font-weight: bold;
 

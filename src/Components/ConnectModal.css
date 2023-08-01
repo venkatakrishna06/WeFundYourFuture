@@ -3,113 +3,121 @@
     position: relative;
     display: flex;
     justify-content: center;
-    max-height: 89vh;
-    background-image:  linear-gradient(to right, rgba(31, 31, 32, 0.641), rgba(185, 180, 185, 0.165)), url('https://cdn.pixabay.com/photo/2016/05/25/07/56/start-1414148_1280.jpg');
+    max-height: 87.5vh;
+    
+    background-image:  linear-gradient(to right, rgba(31, 31, 32, 0.953), rgba(185, 180, 185, 0.04)), url('https://cdn.pixabay.com/photo/2016/05/25/07/56/start-1414148_1280.jpg');
     background-size: cover;
   }
-  .ReactModal__Overlay {
-    background-color: rgba(0, 0, 0, 0.432) !important; /* Semi-transparent overlay */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .ReactModal__Content{
-    border-radius: 25px !important;
-    padding: 0px !important;
-}
-
-.modal-left-content{
-  
-  margin-left: 5%;
-  color: white;
-}
-.modal-left-content .sub-text{
-  font-weight: bold;
-  font-size: 2rem;
-  margin-left: 10%;
-}
-  .modal-left-content ul{
-    margin-left: 7%;
-    font-weight: 500;
-
-  }
-  .left-div{
-    
-    flex: 40%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .left-div h2{
-    color: white;
-    font-size: 3rem;
-    font-weight: bold;
-  }
-  
-  .right-div {
-    color: black;
-    flex: 60%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  /* form.css */
-  .form-container{
-    margin-top: 18%;
-  }
-
-
   .close-button {
     background: none;
     position: absolute;
     top: 1%;
     right: 2%;
- 
     font-size: 2.5rem;
-    
     border: none;
     cursor: pointer;
   }
-  @media (max-width: 768px) {
-    .popup-container {
-      flex-direction: column;
-      min-height: 101vh;
-    
-    }
-    .close-button {
-        position: absolute;
-        top: 2%;
-        right: 4%;
-        font-size: 1rem;
-        border: none;
-        cursor: pointer;
-      }
-    .left-div,
-    .right-div {
-      flex: initial;
-      width: 100%;
-    }
-    .ReactModal__Overlay {
-        background-color: rgba(0, 0, 0, 0.432) !important; /* Semi-transparent overlay */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-    
-      .ReactModal__Content {
-        position: relative;
-        top: 2% !important;
-        left: 2% !important;
-        right: 2% !important;
-        bottom: 2% !important;
-   max-width: 100% !important;
-        border: none;
-        border-radius: 0;
-        padding: 0;
-        background: none;
-        overflow: hidden;
-      }
+  .ReactModal__Content{
+    margin-left: 7%;
+    border-radius: 3% !important;
+    width: 80%;
+    padding: 0px !important;
+  }
+
+  .left-side {
+
+    flex: 1;
+    background-image: url(''); /* Replace with the actual path of your background image */
+    background-size: cover;
+    color: #fff;
+    padding: 50px;
   }
   
+  .left-side h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .right-side {
+    flex: 1;
+    padding: 50px;
+  }
+  .left-side .title1{
+    font-weight: bold;
+    margin-top: 5%;
+  margin-left: 3%;
+    font-size: 3rem;
+
+  }
+  .left-side .title2{
+    font-weight: bold;
+
+    font-size: 3rem;
+
+  }
+ .leftside_JDBS{
+  font-weight: bold;
+  margin-left: 3%;
+  margin-top: 10%;
+ }
+   
+.leftside_JDBS .HomeBanner_listWrapper__40RV8 {
+  width: 100%;
+  margin-top: 4%;
+  
+  
+}
+.leftside_JDBS .HomeBanner_listText__JbAa7{
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.leftSide_bottom_contact{
+ margin-top: 15%;
+  font-size: 1rem;
+  font-weight: bold;
+}
+  
+  
+.quick_assist_call{
+ margin-top: 2%;
+}
+.quick_assist_call a{
+  text-decoration: none;
+}
+
+
+
+
+/* Add this CSS for mobile devices (up to 767px) */
+
+
+/* Media query for small screens (up to 768px width) */
+@media screen and (max-width: 768px) {
+  .popup-container {
+   height: 110vh;
+    flex-direction: column; /* Display elements vertically on small screens */
+  }
+  .ReactModal__Content{
+   
+   border-radius: 3% !important;
+    margin: 0px !important;
+    padding: 0px !important;
+  }
+
+  .left-side{
+    display: none;
+  }
+  .right-side {
+    padding: 0px;
+    margin-top: 30%;
+    width: 100% !important;
+     /* Further reduced padding for small screens */
+  }
+
+
+  .close-button {
+    font-size: 2rem; /* Adjusted font size for small screens */
+  }
+}
+

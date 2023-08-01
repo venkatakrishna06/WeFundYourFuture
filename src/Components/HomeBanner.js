@@ -35,15 +35,11 @@ const HomeBanner = () => {
                 aria-hidden="true"
                 src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2720%27%20height=%2712%27/%3e"
                 
-                
               />
               <img className='greenTick_icon'
                 alt="banner"
                 src="https://di2vt7hcm6vs0.cloudfront.net/v2/pages/Landing%20Page/Assets/greenTick.svg"
                 decoding="async"
-                data-nimg="intrinsic"
-                srcSet="https://di2vt7hcm6vs0.cloudfront.net/v2/pages/Landing%20Page/Assets/greenTick.svg 1x, https://di2vt7hcm6vs0.cloudfront.net/v2/pages/Landing%20Page/Assets/greenTick.svg 2x"
-                
               />
               <noscript></noscript>
             </span>

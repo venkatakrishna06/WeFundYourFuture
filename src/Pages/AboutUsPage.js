@@ -45,7 +45,7 @@ const AboutUsPage = () => {
                 <b><span className="text-success title">Our Mission</span></b>
               </strong>
             </h4>
-            <p className="text-data ">When you choose BP Finance for your educational loan, you benefit from our extensive experience and dedication to helping students fulfill their educational aspirations. Trust us to provide the financial support you need to embark on a successful educational journey.</p>
+            <p className="text-data card-text ">When you choose BP Finance for your educational loan, you benefit from our extensive experience and dedication to helping students fulfill their educational aspirations. Trust us to provide the financial support you need to embark on a successful educational journey.</p>
             <div className="percentage">
               <div>
                 <h1>20 +</h1>
@@ -91,9 +91,6 @@ const AboutUsPage = () => {
             <div className="mb-2 text-body-secondary small margin">We go beyond just providing loans by promoting financial literacy among borrowers. Through various initiatives, we empower students to make informed financial decisions, manage their finances responsibly, and build a strong foundation for their future.</div>
             <h3 className="mb-0 title"><span className="number text-success">07. </span>Longevity and Stability</h3>
             <div className="mb-2 text-body-secondary small margin">With a long-standing presence in the financial industry, BP Finance has established a reputation for stability and reliability. Our commitment to ethical practices, transparency, and fair dealings has earned us the trust of our customers.</div>
-            
-          
-          
           </div>
         </div>
       </div>

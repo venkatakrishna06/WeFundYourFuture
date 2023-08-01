@@ -1,10 +1,12 @@
 import './StartJourneyForm.css';
-import React, { useState } from 'react';
+import React, {useRef, useState} from 'react';
 import { initializeApp } from 'firebase/app'
 import {getFirestore} from 'firebase/firestore'
 import { collection, getDocs,addDoc } from "firebase/firestore";
 import { ref, getDownloadURL, uploadBytesResumable, getStorage } from "firebase/storage";
+import $ from "jquery";
 const StartJourneyForm = () => {
+  const formRef = useRef(null)
   const firebaseConfig = {
     apiKey: "AIzaSyDJa0wWs8YV4ImbYj55Uq6bgnIcN-nCHFk",
     authDomain: "we-fund-your-future.firebaseapp.com",
@@ -31,10 +33,10 @@ const StartJourneyForm = () => {
     first_name: '',
     last_name: '',
     phone_number: '',
-    email: '',
-    country: '',
-    loanAmount:'',
-    file_input: '',
+    email: ''
+    // country: '',
+    // loanAmount:'',
+    // file_input: '',
   });
 
   const handleChange = (event) => {
@@ -61,6 +63,28 @@ const StartJourneyForm = () => {
     }));
   };
 
+  const handleSubmitDataInSheet = (e) => {
+    e.preventDefault();
+    $.ajax({
+      type        : 'POST',
+      url         : 'https://script.google.com/macros/s/AKfycbyhlnLmi11zZMTN4k8vDz6-obrxY8o5cT6vFXvstFmzW9_amgCoLT-VEok9acXlQfa4nQ/exec',
+      data        : formData,
+    }).done(function(data) {
+      if(data.result == 'success') {
+        // Form submission was successful and accepted by google.
+        // You can show your success message here
+
+      } else {
+        // Form was submission failed for some reasons.
+        // You can examine the response from google to see whats missing
+
+      }
+    }).fail(function (jqXHR,status,err) {
+      // Form submission failed due to some network or other errors
+      // I am alerting the error but you can do anything else with it
+      alert(err);
+    });
+  }
   const handleSubmit = async (event) => {
     event.preventDefault();
     const newErrors = {};
@@ -82,13 +106,13 @@ const StartJourneyForm = () => {
       newErrors.email = 'Email is invalid';
     }
 
-    if (formData.country === '') {
-      newErrors.country = 'Please select a country';
-    }
+    // if (formData.country === '') {
+    //   newErrors.country = 'Please select a country';
+    // }
 
-    if (!formData.file_input) {
-      newErrors.file_input = 'Please choose a file';
-    }
+    // if (!formData.file_input) {
+    //   newErrors.file_input = 'Please choose a file';
+    // }
 
     // Check for any errors
     if (Object.keys(newErrors).length > 0) {
@@ -131,133 +155,136 @@ const StartJourneyForm = () => {
             console.log(newData);
           })
     }
+
   }
   return (
-    <form onSubmit={handleSubmit}>
-      <div className="container form-container">
-        <div className="form-title">
-        <h2 className="form-title">Start your journey now</h2>
-      <p className="form-subtitle">Help us with a few details.</p>
-        </div>
-        <div className="row">
-          <div className="col-md-6 col-sm-12">
-            <div className="form-group">
-              <input
-                type="text"
-                id="first-name"
-                name="first_name"
-                className="form-control"
-                value={formData.first_name}
-                onChange={handleChange}
-                required
-              />
-              <label htmlFor="first-name">First Name</label>
-              {errors.first_name && <div className="error-msg">{errors.first_name}</div>}
+     <form onSubmit={handleSubmitDataInSheet}>
+          <div className="container form-container">
+            <div className="form-title">
+              <h2 className="form-title">Start your journey now</h2>
+              <p className="form-subtitle">Help us with a few details.</p>
             </div>
-          </div>
-          <div className="col-md-6 col-sm-12">
-            <div className="form-group">
-              <input
-                type="text"
-                id="last-name"
-                name="last_name"
-                className="form-control"
-                value={formData.last_name}
-                onChange={handleChange}
-                required
-              />
-              <label htmlFor="last-name">Last Name</label>
-              {errors.last_name && <div className="error-msg">{errors.last_name}</div>}
+            <div className="row">
+              <div className="col-md-6 col-sm-12">
+                <div className="form-group">
+                  <input
+                      type="text"
+                      id="first-name"
+                      name="first_name"
+                      className="form-control"
+                      value={formData.first_name}
+                      onChange={handleChange}
+                      required
+                  />
+                  <label htmlFor="first-name">First Name</label>
+                  {errors.first_name && <div className="error-msg">{errors.first_name}</div>}
+                </div>
+              </div>
+              <div className="col-md-6 col-sm-12">
+                <div className="form-group">
+                  <input
+                      type="text"
+                      id="last-name"
+                      name="last_name"
+                      className="form-control"
+                      value={formData.last_name}
+                      onChange={handleChange}
+                      required
+                  />
+                  <label htmlFor="last-name">Last Name</label>
+                  {errors.last_name && <div className="error-msg">{errors.last_name}</div>}
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-        <div className="row">
-          <div className="col-md-6 col-sm-12">
-            <div className="form-group">
-              <input
-                type="tel"
-                id="phone-number"
-                name="phone_number"
-                pattern="[0-9]+"
-                className="form-control"
-                value={formData.phone_number}
-                onChange={handleChange}
-                required
-              />
-              <label htmlFor="phone-number">Phone Number</label>
-              {errors.phone_number && <div className="error-msg">{errors.phone_number}</div>}
+            <div className="row">
+              <div className="col-md-6 col-sm-12">
+                <div className="form-group">
+                  <input
+                      type="tel"
+                      id="phone-number"
+                      name="phone_number"
+                      pattern="[0-9]+"
+                      className="form-control"
+                      value={formData.phone_number}
+                      onChange={handleChange}
+                      required
+                  />
+                  <label htmlFor="phone-number">Phone Number</label>
+                  {errors.phone_number && <div className="error-msg">{errors.phone_number}</div>}
+                </div>
+              </div>
+              <div className="col-md-6 col-sm-12">
+                <div className="form-group">
+                  <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      className="form-control"
+                      value={formData.email}
+                      onChange={handleChange}
+                      required
+                  />
+                  <label htmlFor="email">Email</label>
+                  {errors.email && <div className="error-msg">{errors.email}</div>}
+                </div>
+              </div>
             </div>
-          </div>
-          <div className="col-md-6 col-sm-12">
-            <div className="form-group">
-              <input
-                type="email"
-                id="email"
-                name="email"
-                className="form-control"
-                value={formData.email}
-                onChange={handleChange}
-                required
-              />
-              <label htmlFor="email">Email</label>
-              {errors.email && <div className="error-msg">{errors.email}</div>}
+            <div className="row">
+              <div className="col-md-6 col-sm-12">
+                <div className="form-group">
+                  <select
+                      id="country"
+                      name="country"
+                      className="form-control"
+                      value={formData.country}
+                      onChange={handleChange}
+                      // required
+                  >
+                    <option value="" disabled>Select Country</option>
+                    <option value="India">India</option>
+                    <option value="USA">USA</option>
+                    <option value="UK">UK</option>
+                  </select>
+                  {/*{errors.country && <div className="error-msg">{errors.country}</div>}*/}
+                </div>
+              </div>
+              <div className="col-md-6 col-sm-12">
+                <div className="form-group">
+                  <input
+                      type="number"
+                      id="loanAmount"
+                      name="loanAmount"
+                      className="form-control"
+                      value={formData.loanAmount}
+                      onChange={handleChange}
+                      // required
+                  />
+                  <label htmlFor="email">Loan Amount</label>
+                  {/*{errors.loanAmount && <div className="error-msg">{errors.loanAmount}</div>}*/}
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-        <div className="row">
-          <div className="col-md-6 col-sm-12">
-            <div className="form-group">
-              <select
-                id="country"
-                name="country"
-                className="form-control"
-                value={formData.country}
-                onChange={handleChange}
-                required
-              >
-                <option value="" disabled>Select Country</option>
-                <option value="India">India</option>
-                <option value="USA">USA</option>
-                <option value="UK">UK</option>
-              </select>
-              {errors.country && <div className="error-msg">{errors.country}</div>}
+            <div className="row">
+              <div className="col-md-6 col-sm-12">
+                <label className="file-input-label" htmlFor="file-input">
+                  Choose File
+                </label>
+                <input
+                    type="file"
+                    id="file-input"
+                    name="file_input"
+                    className="file-input"
+                    onChange={handleFileChange}
+
+                />
+                {/*{errors.file_input && <div className="error-msg">{errors.file_input}</div>}*/}
+              </div>
             </div>
+            <button type="submit" className="submit-button">Submit</button>
           </div>
-          <div className="col-md-6 col-sm-12">
-            <div className="form-group">
-              <input
-                type="number"
-                id="loanAmount"
-                name="loanAmount"
-                className="form-control"
-                value={formData.loanAmount}
-                onChange={handleChange}
-                required
-              />
-              <label htmlFor="email">Loan Amount</label>
-              {errors.loanAmount && <div className="error-msg">{errors.loanAmount}</div>}
-            </div>
-          </div>
-        </div>
-        <div className="row">
-          <div className="col-md-6 col-sm-12">
-            <label className="file-input-label" htmlFor="file-input">
-              Choose File
-            </label>
-            <input
-              type="file"
-              id="file-input"
-              name="file_input"
-              className="file-input"
-              onChange={handleFileChange}
-              
-            />
-            {errors.file_input && <div className="error-msg">{errors.file_input}</div>}
-          </div>
-        </div>
-        <button type="submit" className="submit-button">Submit</button>
-      </div>
-    </form>
+        </form>
+
+
   );
 };
 

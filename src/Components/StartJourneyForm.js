@@ -81,7 +81,7 @@ const StartJourneyForm = () => {
     }).fail(function (jqXHR,status,err) {
       // Form submission failed due to some network or other errors
       // I am alerting the error but you can do anything else with it
-      alert(err);
+
     });
   }
 

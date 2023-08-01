@@ -2,3 +2,98 @@
     border-top: 1px solid white;
     background-color: none !important;
 }
+/* CSS for the hero container */
+.hero-container {
+    position: relative;
+    width: 100%;
+    max-height: 400px;
+    overflow: hidden;
+  }
+  
+  /* CSS for the hero image */
+  .hero-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    
+  }
+  
+  /* CSS for the text overlay */
+  .text-overlay {
+    position: absolute;
+    top: 60%;
+    left: 38%;
+    transform: translate(-50%, -50%);
+    color: white;
+    
+  }
+  
+  /* Additional styling for the text */
+  .text-overlay h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .text-overlay p {
+    width: 60%;
+   font-weight: 500;
+    font-size: 1.5rem;
+  }
+
+
+
+
+  
+
+  .cupcake {
+    height: 80px;
+    width: 100px;
+    float: left;
+    border-radius: 50%;
+  }
+  .float {
+    margin: 0;
+    padding: 0;
+    padding-top: 10px;
+  }
+  p {
+    margin: 0;
+    padding: 0;
+  }
+  .number {
+   
+   
+
+  }
+  .card-text{
+    font-size: 1.2rem;
+  }
+  .text-data {
+    color: black;
+    font-weight: bold;
+    line-height: 2em;
+    width: 99%;
+  }
+  .percentage {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .margin {
+    margin-left: 45px;
+  }
+  
+  .title {
+    font-size: 1.5rem;
+color: #403d39;
+font-weight: bold;
+
+  }
+  .misson-container{
+    padding: 0px 20px 20px 20px;
+  }
+  .sub-text{
+    margin-top: 7px;
+    font-size: 16px;
+  }

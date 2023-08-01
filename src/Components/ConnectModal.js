@@ -1,189 +1,99 @@
 
 import './ConnectModal.css'; // Import the CSS file
 import React, { useState }  from 'react';
+import StartJourneyForm from './StartJourneyForm';
 import Modal from 'react-modal';
 
-
 const ConnectModal = ({ isOpen, onRequestClose }) => {
-    const [fullName, setFullName] = useState('');
-  const [email, setEmail] = useState('');
-  const [phoneNumber, setPhoneNumber] = useState('');
-  const [originCountry, setOriginCountry] = useState('');
-  const [destination, setDestination] = useState('');
-  
-  const [loanAmount, setLoanAmount] = useState('');
-  const [errors, setErrors] = useState({});
-
-  const validateForm = () => {
-    const errors = {};
-
-    if (!fullName) {
-      errors.fullName = 'Full name is required';
-    }
-    if (!email) {
-      errors.email = 'Email is required';
-    }
-    if (!phoneNumber) {
-      errors.phoneNumber = 'Phone number is required';
-    }
-    if (!originCountry) {
-      errors.originCountry = 'Origin is required';
-    }
-    if (!destination) {
-      errors.destination = ' Destination is required';
-    }
-
-    if (!loanAmount) {
-      errors.loanAmount = ' Loan Amount is required';
-    }
-
-    // Add more validations for email, phone number, and loan amount if needed
-
-    setErrors(errors);
-
-    return Object.keys(errors).length === 0;
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-
-    if (validateForm()) {
-      // Handle form submission here
-      console.log('Form submitted successfully!');
-    }
-  };
-
-
-
-
-
-
   return (
     <Modal
       isOpen={isOpen}
       onRequestClose={onRequestClose}
-      contentLabel="Popup Modal"
-    >
+      contentLabel="Popup Modal" >
       <div className="popup-container">
-      <button className="close-button" onClick={onRequestClose}>
-          X
-        </button>
-        <div className="left-div">
-          {/* Content for the left div */}
-          <h2>We Fund Your Future</h2>
-        </div>
-        <div className="right-div">
-          {/* Content for the right div */}
+        <button className="close-button" onClick={onRequestClose} type="button"  aria-label="Close">
+  <span aria-hidden="true">&times;</span>
+</button>
 
-          <div className="form-container">
-      <h2 className="form-title">Start your journey now</h2>
-      <p className="form-subtitle">Help us with a few details.</p>
-      <form onSubmit={handleSubmit}>
-        <div className="input-group">
-          <label className="label" htmlFor="fullName">
-            Full Name
-          </label>
-          <input
-            className="input"
-            placeholder='Jennifer'
-            type="text"
-            id="fullName"
-            value={fullName}
-            onChange={(e) => setFullName(e.target.value)}
-          />
-          {errors.fullName && (
-            <p className="error-message">{errors.fullName}</p>
-          )}
-        </div>
-
-        {/* Add input fields for email, phone number, and loan amount with similar structure */}
-        {/* For example: */}
-       <div className="input-group">
-          <label className="label" htmlFor="email">
-           Email Address
-          </label>
-          <input
-            className="input"
-            placeholder='Jenmifer@example.co '
-            type="text"
-            id="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-          />
-          {errors.fullName && (
-            <p className="error-message">{errors.email}</p>
-          )}
-        </div>
-        <div className="input-group">
-          <label className="label" htmlFor="phoneNo">
-            Phone Number
-          </label>
-          <input
-            className="input"
-            placeholder='7893281389'
-            type="number"
-            id="phoneNo"
-            value={phoneNumber}
-            onChange={(e) => setPhoneNumber(e.target.value)}
-          />
-          {errors.phoneNumber && (
-            <p className="error-message">{errors.phoneNumber}</p>
-          )}
-        </div> 
-        <div className="input-group">
-          <label className="label" htmlFor="originCountry">
-            Origin Country
-          </label>
-          <input
-            className="input"
-            placeholder='India'
-            type="text"
-            id="originCountry"
-            value={originCountry}
-            onChange={(e) => setOriginCountry(e.target.value)}
-          />
-          {errors.originCountry && (
-            <p className="error-message">{errors.originCountry}</p>
-          )}
-        </div> 
-        <div className="input-group">
-          <label className="label" htmlFor="destination">
-            Destination Country
-          </label>
-          <input
-            className="input"
-            placeholder='USA'
-            type="text"
-            id="destination"
-            value={destination}
-            onChange={(e) => setDestination(e.target.value)}
-          />
-          {errors.destination && (
-            <p className="error-message">{errors.destination}</p>
-          )}
-        </div> 
-
-        <div className="input-group">
-          <label className="label" htmlFor="loanAmount">
-            Loan required
-          </label>
-          <input
-            className="input"
-            placeholder='20000'
-            type="number"
-            id="loanAmount"
-            value={loanAmount}
-            onChange={(e) => setLoanAmount(e.target.value)}
-          />
-          {errors.loanAmount && (
-            <p className="error-message">{errors.loanAmount}</p>
-          )}
-        </div> 
-        <button type="submit" className='modal-form-submiotBtn'>Submit</button>
-      </form>
-    </div>
+<div className="left-side">
+<h1 className='title1'>BP Finance</h1>
+<div className='leftside_JDBS'>
+        <h2 className='title2'>Why US ?</h2>
+        <div className="HomeBanner_listWrapper__40RV8">
+            <span className="HomeBanner_iconWrapper__qPaUy">
+              <img className='greenTick_bg'
+                alt=""
+                aria-hidden="true"
+                src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2720%27%20height=%2712%27/%3e"
+                
+              />
+              <img className='greenTick_icon'
+                alt="banner"
+                src="https://di2vt7hcm6vs0.cloudfront.net/v2/pages/Landing%20Page/Assets/greenTick.svg"
+                decoding="async"
+              />
+              <noscript></noscript>
+            </span>
+            <p className="HomeBanner_listText__JbAa7" data-cy="heroSection-list">Flexible Collateral</p>
+          </div>
        
-        </div>
+          <div className="HomeBanner_listWrapper__40RV8">
+            <span className="HomeBanner_iconWrapper__qPaUy">
+              <img className='greenTick_bg'
+                alt=""
+                aria-hidden="true"
+                src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2720%27%20height=%2712%27/%3e"
+                
+              />
+              <img className='greenTick_icon'
+                alt="banner"
+                src="https://di2vt7hcm6vs0.cloudfront.net/v2/pages/Landing%20Page/Assets/greenTick.svg"
+                decoding="async"
+              />
+              <noscript></noscript>
+            </span>
+            <p className="HomeBanner_listText__JbAa7" data-cy="heroSection-list"> AI Powered Loan Partner Suggestions</p>
+          </div>
+          <div className="HomeBanner_listWrapper__40RV8">
+            <span className="HomeBanner_iconWrapper__qPaUy">
+              <img className='greenTick_bg'
+                alt=""
+                aria-hidden="true"
+                src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2720%27%20height=%2712%27/%3e"
+                
+              />
+              <img className='greenTick_icon'
+                alt="banner"
+                src="https://di2vt7hcm6vs0.cloudfront.net/v2/pages/Landing%20Page/Assets/greenTick.svg"
+                decoding="async"
+              />
+              <noscript></noscript>
+            </span>
+            <p className="HomeBanner_listText__JbAa7" data-cy="heroSection-list">Low Bank Processing Fee</p>
+          </div>
+      </div>
+      <div className='leftSide_bottom_contact'>Need Quick Loan Assistance? Call Our Experts on</div>
+      <div className='quick_assist_call'> <a href="tel:9703628658">
+      
+      <div className="HomeBanner_listWrapper__40RV8">
+            <span className="HomeBanner_iconWrapper__qPaUy">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+  <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+</svg>
+              <noscript></noscript>
+            </span>
+            <p className="HomeBanner_listText__JbAa7" data-cy="heroSection-list">+919703628658</p>
+          </div>
+          </a>
+      </div>
+      
+      </div>
+      <div className="right-side">
+        <StartJourneyForm></StartJourneyForm>
+      </div>
+     
+        
+       
       </div>
     </Modal>
   );

@@ -1,16 +1,17 @@
-section{
+.HomeBanner_homeBanner__8Wzs_{
   font-weight: 400;
   line-height: 1.5;
   font-size: 1.6rem;
   color: inherit;
-  font-family: Poppins,sans-serif!important;
+  font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
- 
-  background: linear-gradient(180deg,#1a1c1d,rgba(26,28,29,0));
   mix-blend-mode: normal;
   position: relative;
-  height: 680px;
+ ;
+}
+.HomeBanner_bannerBottomWrapper__j7nzu-sm{
+display: none;
 }
 
 .HomeBanner_imageContainer__jGCwF{
@@ -19,6 +20,13 @@ section{
   width: 100%;
   overflow: hidden;
   height: 680px;
+  background-image: linear-gradient(to right,
+  rgba(31, 31, 32, 0.641),
+  rgba(185, 180, 185, 0.165)),
+  url('https://cdn.pixabay.com/photo/2016/10/18/11/24/university-student-1749912_1280.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 10%;
 }
 
 .HomeBanner_imageContainer__jGCwF span{
@@ -109,13 +117,7 @@ bottom: 21%;
 }
 
 .HomeBanner_iconWrapper__qPaUy{
-  -webkit-font-smoothing: antialiased;
-  -webkit-text-size-adjust: 100%;
-  font-weight: 400;
-  line-height: 1.5;
-  font-size: 1.6rem;
-  color: inherit;
-  font-family: Poppins,sans-serif!important;
+  font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -126,13 +128,9 @@ bottom: 21%;
   min-height: 12px;
 }
 .greenTick_bg {
-  -webkit-font-smoothing: antialiased;
-  -webkit-text-size-adjust: 100%;
-  font-weight: 400;
-  line-height: 1.5;
-  font-size: 1.6rem;
+  
   color: inherit;
-  font-family: Poppins,sans-serif!important;
+  font-family: 'Roboto', sans-serif;
   box-sizing: border-box;
   display: block;
   max-width: 100%;
@@ -146,13 +144,7 @@ bottom: 21%;
 }
 
 .greenTick_icon{
-  -webkit-font-smoothing: antialiased;
-  -webkit-text-size-adjust: 100%;
-  font-weight: 400;
-  line-height: 1.5;
-  font-size: 1.6rem;
-  color: inherit;
-  font-family: Poppins,sans-serif!important;
+  
   position: absolute;
   inset: 0px;
   box-sizing: border-box;
@@ -207,9 +199,7 @@ bottom: 21%;
 
 
 .HomeBanner_bannerBottomWrapper__j7nzu{
-  
 
- 
   margin: 0;
   box-sizing: border-box;
   background: rgba(34,34,34,.4);
@@ -271,6 +261,8 @@ bottom: 21%;
   object-fit: contain;
 }
 
+
+
 .HomeBanner_reviewItem__ekYq1{
   
 
@@ -291,10 +283,8 @@ bottom: 21%;
   margin-right: 16px;
 }
 .reviewItemIcon{
-  
   position: absolute;
   inset: 0px;
-  
   padding: 0px;
   border: none;
   margin: auto;
@@ -307,8 +297,6 @@ bottom: 21%;
   max-height: 100%;
 }
 .reviewItemIcon_bg{
-  
-
   display: block;
   max-width: 100%;
   width: initial;
@@ -319,9 +307,7 @@ bottom: 21%;
   margin: 0px;
   padding: 0px;
 }
-
 .HomeBanner_counting__90xWw{
-
 font-weight: 500;
 font-size: 30px;
 line-height: 45px;
@@ -346,12 +332,14 @@ color: #fff;
     height: auto; /* Adjust height as per content */
   }
   .HomeBanner_imageContainer__jGCwF {
+   
     position: relative;
     margin: 0;
     width: 100%;
     overflow: hidden;
     height: 480px;}
   .HomeBanner_bannerContent__U267C {
+    
     height: 80%;
     bottom: 15%; /* Adjust position */
     top: 5%; /* Adjust position */
@@ -381,6 +369,7 @@ color: #fff;
   .HomeBanner_bannerBottomWrapper__j7nzu{
     display: none;
   }
+  
 }
 
 /* For screens with a width less than or equal to 480px (e.g., smartphones) */
@@ -417,10 +406,44 @@ color: #fff;
     padding: 8px 0; /* Adjust padding */
     width: 100%; /* Take full width */
   }
-
   .HomeBanner_bannerBottomWrapper__j7nzu{
     display: none;
   }
+  .HomeBanner_bannerBottomWrapper__j7nzu-sm , .reviewItem_container_sm{
+    display: flex;
+    padding: 6% 6%;
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .HomeBanner_googleReview__OobHe-sm{
+    text-align: center;
+  }
+  .HomeBanner_bannerBottomWrapper__j7nzu-sm p{
+    margin: 0px !important;
+  }
+  
+  .HomeBanner_googleReview__OobHe-sm {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+  
+  
+  .HomeBanner_reviewItem__ekYq1-sm {
+   
+    flex: 0 0 calc(50% - 10px); /* 2 items per row with 10px spacing in between */
+    max-width: calc(50% - 10px);
+    margin-top: 15%; /* Optional margin between items */
+  }
+
+
+
+ 
+ 
 }
 
 

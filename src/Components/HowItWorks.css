@@ -9,7 +9,7 @@
   }
   
   .HowItWorks_leftContainer {
-    flex-basis: 50%;
+    flex-basis: 45%;
     padding-left: 2%;
     display: block;
   }
@@ -20,20 +20,30 @@
   }
   .HowItWorks_rightContainer {
     flex-basis: 50%;
-    
-  
   }
 
-  .right_title{
+  .HowItWorks_title{
+    font-size: 3rem;
     color: #222222;
-    font-family: sans-serif;
     font-weight: bold;
   }
+.connectWithUsBtn{
+  margin-top: 7%;
+  margin-left: 5%;
+  width: 35%;
+}
   
   @media screen and (max-width: 768px) {
     .howItWorksContainer {
+      margin-top: 20px;
       /* Hide the left container on small screens */
       flex-direction: column;
+    }
+    .HowItWorks_title{
+      margin-top: 0px;
+      margin-bottom: 8%;
+      text-align: center;
+      font-size: 40px;
     }
   
     .HowItWorks_leftContainer {
@@ -44,6 +54,29 @@
       /* Adjust the width of the right container to take full width on small screens */
       flex: 100%;
     }
+    .title-div p {
+      font-size: 14px !important;
+      /* Add your styles for the title text here */
+    }
+    .dot {
+      width: 10px;
+      height: 10px;
+      margin-bottom: 10px;
+      border-radius: 50%;
+      background-color: rgba(0, 0, 0, 0.363);
+      /* Add any additional styles for the dot here */
+    }
+    
+    .step-text {
+      padding-top: 5%;
+      font-size: 12px !important;
+      /* Add any styles for the text container here */
+    }
+    .connectWithUsBtn{
+    text-align: center;
+    margin-left: 20%;
+   
+      width: 70%;
+    }
   }
 
-  

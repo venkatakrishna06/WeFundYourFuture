@@ -157,7 +157,7 @@ const StartJourneyForm = () => {
     }
   }
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmitDataInSheet}>
       <div className="container form-container">
         <div className="form-title">
         <h2 className="form-title">Start your journey now</h2>
@@ -237,12 +237,13 @@ const StartJourneyForm = () => {
                 className="form-control"
                 value={formData.country}
                 onChange={handleChange}
-                required
               >
                 <option value="" disabled>Select Country</option>
-                <option value="India">India</option>
+                <option value="IN">India</option>
                 <option value="USA">USA</option>
                 <option value="UK">UK</option>
+                <option value="AUS">Australia</option>
+                <option value="CA">Canada</option>
               </select>
               {errors.country && <div className="error-msg">{errors.country}</div>}
             </div>
@@ -256,26 +257,25 @@ const StartJourneyForm = () => {
                 className="form-control"
                 value={formData.loanAmount}
                 onChange={handleChange}
-                required
+
               />
               <label htmlFor="email">Loan Amount</label>
               {errors.loanAmount && <div className="error-msg">{errors.loanAmount}</div>}
             </div>
           </div>
         </div>
-        <div className="row"><p className='input-file-label'>Upload relavent documents</p>
-          <div className="col-md-6 col-sm-12">
-            <input
-              type="file"
-              id="file-input"
-              name="file_input"
-              className="file-input"
-              onChange={handleFileChange}
-
-            />
-            {errors.file_input && <div className="error-msg">{errors.file_input}</div>}
-          </div>
-        </div>
+        {/*<div className="row"><p className='input-file-label'>Upload relavent documents</p>*/}
+        {/*  <div className="col-md-6 col-sm-12">*/}
+        {/*    <input*/}
+        {/*      type="file"*/}
+        {/*      id="file-input"*/}
+        {/*      name="file_input"*/}
+        {/*      className="file-input"*/}
+        {/*      onChange={handleFileChange}*/}
+        {/*    />*/}
+        {/*    {errors.file_input && <div className="error-msg">{errors.file_input}</div>}*/}
+        {/*  </div>*/}
+        {/*</div>*/}
         <button type="submit" className="submit-button">Submit</button>
       </div>
     </form>

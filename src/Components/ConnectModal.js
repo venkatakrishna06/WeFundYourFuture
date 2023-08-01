@@ -89,7 +89,7 @@ const ConnectModal = ({ isOpen, onRequestClose }) => {
       
       </div>
       <div className="right-side">
-        <StartJourneyForm></StartJourneyForm>
+        <StartJourneyForm closeModal={onRequestClose}></StartJourneyForm>
       </div>
      
         

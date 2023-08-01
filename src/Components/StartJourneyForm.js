@@ -5,7 +5,9 @@ import {getFirestore} from 'firebase/firestore'
 import { collection, getDocs,addDoc } from "firebase/firestore";
 import { ref, getDownloadURL, uploadBytesResumable, getStorage } from "firebase/storage";
 import $ from "jquery";
-const StartJourneyForm = () => {
+import { useNavigate } from "react-router-dom";
+const StartJourneyForm = ({closeModal}) => {
+  const navigate = useNavigate();
   const firebaseConfig = {
     apiKey: "AIzaSyDJa0wWs8YV4ImbYj55Uq6bgnIcN-nCHFk",
     authDomain: "we-fund-your-future.firebaseapp.com",
@@ -70,19 +72,17 @@ const StartJourneyForm = () => {
       data        : formData,
     }).done(function(data) {
       if(data.result == 'success') {
-        // Form submission was successful and accepted by google.
-        // You can show your success message here
-
-      } else {
-        // Form was submission failed for some reasons.
-        // You can examine the response from google to see whats missing
+        closeModal()
+      }
+      else {
+        closeModal()
 
       }
     }).fail(function (jqXHR,status,err) {
-      // Form submission failed due to some network or other errors
-      // I am alerting the error but you can do anything else with it
+      closeModal()
 
     });
+
   }
 
   const handleSubmit = async (event) => {

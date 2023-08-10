@@ -3,20 +3,23 @@
     position: relative;
     display: flex;
     justify-content: center;
-    max-height: 87.5vh;
-    
+    max-height: 100%;
+    padding-top: 1.5%;
     background-image:  linear-gradient(to right, rgba(31, 31, 32, 0.953), rgba(185, 180, 185, 0.04)), url('https://cdn.pixabay.com/photo/2016/05/25/07/56/start-1414148_1280.jpg');
     background-size: cover;
   }
+  
   .close-button {
     background: none;
     position: absolute;
+    color: white;
     top: 1%;
     right: 2%;
     font-size: 2.5rem;
     border: none;
     cursor: pointer;
   }
+
   .ReactModal__Content{
     margin-left: 7%;
     border-radius: 3% !important;

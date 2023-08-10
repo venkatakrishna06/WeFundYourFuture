@@ -10,7 +10,7 @@ const AboutUsPage = () => {
       <img className="hero-image" src="https://cdn.pixabay.com/photo/2013/09/06/09/19/sunset-179392_1280.jpg" alt="Hero Image" />
       <div className="text-overlay">
         <h1>Live a Happy & <br/> Carefree Student life</h1>
-        {/* <p>At BP Finance, we have a proven track record of providing educational loans to support students in pursuing their academic dreams</p> */}
+        {/* <p>We Fund Your Future, we have a proven track record of providing educational loans to support students in pursuing their academic dreams</p> */}
       </div>
     </div>
 
@@ -27,7 +27,7 @@ const AboutUsPage = () => {
               </strong>
             </h4>
             <h3 className="mb-0">
-            At BP Finance, we have a proven track record of providing educational loans to support students in pursuing their academic dreams
+            At We Fund Your Future, we have a proven track record of providing educational loans to support students in pursuing their academic dreams
             </h3>
             <span className="float">
 
@@ -45,7 +45,7 @@ const AboutUsPage = () => {
                 <b><span className="text-success title">Our Mission</span></b>
               </strong>
             </h4>
-            <p className="text-data card-text ">When you choose BP Finance for your educational loan, you benefit from our extensive experience and dedication to helping students fulfill their educational aspirations. Trust us to provide the financial support you need to embark on a successful educational journey.</p>
+            <p className="text-data card-text ">When you choose We Fund Your Future for your educational loan, you benefit from our extensive experience and dedication to helping students fulfill their educational aspirations. Trust us to provide the financial support you need to embark on a successful educational journey.</p>
             <div className="percentage">
               <div>
                 <h1>20 +</h1>
@@ -90,7 +90,7 @@ const AboutUsPage = () => {
             <h3 className="mb-0 title"><span className="number text-success">06. </span>Financial Education Initiatives</h3>
             <div className="mb-2 text-body-secondary small margin">We go beyond just providing loans by promoting financial literacy among borrowers. Through various initiatives, we empower students to make informed financial decisions, manage their finances responsibly, and build a strong foundation for their future.</div>
             <h3 className="mb-0 title"><span className="number text-success">07. </span>Longevity and Stability</h3>
-            <div className="mb-2 text-body-secondary small margin">With a long-standing presence in the financial industry, BP Finance has established a reputation for stability and reliability. Our commitment to ethical practices, transparency, and fair dealings has earned us the trust of our customers.</div>
+            <div className="mb-2 text-body-secondary small margin">With a long-standing presence in the financial industry, We Fund Your Future has established a reputation for stability and reliability. Our commitment to ethical practices, transparency, and fair dealings has earned us the trust of our customers.</div>
           </div>
         </div>
       </div>

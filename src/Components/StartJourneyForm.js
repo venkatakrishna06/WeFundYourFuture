@@ -27,6 +27,8 @@ const StartJourneyForm = ({closeModal}) => {
     email: '',
     country: '',
     loanAmount:'',
+    admissionStatus:'',
+    targetIntake:'',
     file_input: null,
   });
 
@@ -34,10 +36,12 @@ const StartJourneyForm = ({closeModal}) => {
     first_name: '',
     last_name: '',
     phone_number: '',
-    email: ''
+    email: '',
     // country: '',
     // loanAmount:'',
     // file_input: '',
+    admissionStatus:'',
+    targetIntake:''
   });
 
   const handleChange = (event) => {
@@ -105,7 +109,12 @@ const StartJourneyForm = ({closeModal}) => {
     if (!/\S+@\S+\.\S+/.test(formData.email)) {
       newErrors.email = 'Email is invalid';
     }
-
+    if (formData.admissionStatus.trim() === '') {
+      newErrors.last_name = 'Status is required';
+    }
+    if (formData.targetIntake.trim() === '') {
+      newErrors.last_name = 'Intake date is required';
+    }
     // if (formData.country === '') {
     //   newErrors.country = 'Please select a country';
     // }
@@ -113,7 +122,6 @@ const StartJourneyForm = ({closeModal}) => {
     // if (!formData.file_input) {
     //   newErrors.file_input = 'Please choose a file';
     // }
-
     // Check for any errors
     if (Object.keys(newErrors).length > 0) {
       setErrors(newErrors);
@@ -257,6 +265,7 @@ const StartJourneyForm = ({closeModal}) => {
                 className="form-control"
                 value={formData.loanAmount}
                 onChange={handleChange}
+                required
 
               />
               <label htmlFor="email">Loan Amount</label>
@@ -276,6 +285,42 @@ const StartJourneyForm = ({closeModal}) => {
         {/*    {errors.file_input && <div className="error-msg">{errors.file_input}</div>}*/}
         {/*  </div>*/}
         {/*</div>*/}
+
+        <div className="row">
+          <div className="col-md-6 col-sm-12">
+            <div className="form-group">
+              <select
+                id="admissionStatus"
+                name="admissionStatus"
+                className="form-control"
+                value={formData.admissionStatus}
+                onChange={handleChange}
+              >
+                <option value="" disabled>Admission Status</option>
+                <option value="Not Applied">Not Applied</option>
+                <option value="Applied">Applied</option>
+                <option value="Confirmed">Confirmed</option>
+                
+              </select>
+              {errors.country && <div className="error-msg">{errors.admissionStatus}</div>}
+            </div>
+          </div>
+          <div className="col-md-6 col-sm-12">
+            <div className="form-group">
+              <input
+                type="date"
+                id="targetIntake"
+                name="targetIntake"
+                className="form-control"
+                value={formData.targetIntake}
+                onChange={handleChange}
+
+              />
+              <label htmlFor="targetIntake">Target Intake</label>
+              {errors.loanAmount && <div className="error-msg">{errors.targetIntake}</div>}
+            </div>
+          </div>
+        </div>
         <button type="submit" className="submit-button">Submit</button>
       </div>
     </form>

@@ -1,10 +1,24 @@
 import React, { useState, useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Modal, Button } from 'react-bootstrap';
+import { Modal } from 'react-bootstrap';
+import ConnectModal from './ConnectModal';
 import './NavBar.css';
 import { Link } from 'react-router-dom';
+import logo from '../logo.png'
 
 const NavBar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const openPopup = () => {
+    setIsOpen(true);
+    document.body.style.overflow = 'hidden';
+  };
+
+  const closePopup = () => {
+    window.location.reload(false);
+    setIsOpen(false);
+    document.body.style.overflow = 'auto';
+  };
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isSmallScreen, setIsSmallScreen] = useState(false);
 
@@ -28,7 +42,7 @@ const NavBar = () => {
     <nav className="navbar navbar-expand-lg">
       <div className="container">
         <a className="brand" href="/">
-          <img src="https://i.ibb.co/C2CrWbq/logo.png" alt="Logo" className="navbar-logo" />
+          <img src={logo} alt="Logo" className="navbar-logo" />
         </a>
         {isSmallScreen ? (
           <>
@@ -50,9 +64,14 @@ const NavBar = () => {
                 </Link>
               </li>
               <li className="nav-item">
-              <Link className="nav-link" target={'_blank'} to="https://api.whatsapp.com/send?phone=9703628658">
+              {/* <Link className="nav-link" target={'_blank'} to="https://api.whatsapp.com/send?phone=9703628658">
                   Contact Us
-                </Link>
+                </Link> */}
+
+
+          <p className="nav-link" onClick={openPopup}>Contact us</p>
+          <ConnectModal isOpen={isOpen} onRequestClose={closePopup} />
+      
               </li>
             </ul>
             {/*<div className="navbar-button">*/}
@@ -78,9 +97,8 @@ const NavBar = () => {
                 </Link>
               </li>
               <li className="nav-item">
-              <Link className="nav-link" target={'_blank'} to="https://api.whatsapp.com/send?phone=9703628658">
-                  Contact Us
-                </Link>
+              <p className="nav-link" onClick={openPopup}>Contact us</p>
+          <ConnectModal isOpen={isOpen} onRequestClose={closePopup} />
               </li>
             </ul>
             <div className="navbar-button">

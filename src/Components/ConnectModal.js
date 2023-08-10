@@ -16,7 +16,7 @@ const ConnectModal = ({ isOpen, onRequestClose }) => {
 </button>
 
 <div className="left-side">
-<h1 className='title1'>BP Finance</h1>
+<h1 className='title1'>We Fund Your Future</h1>
 <div className='leftside_JDBS'>
         <h2 className='title2'>Why US ?</h2>
         <div className="HomeBanner_listWrapper__40RV8">
@@ -82,7 +82,7 @@ const ConnectModal = ({ isOpen, onRequestClose }) => {
 </svg>
               <noscript></noscript>
             </span>
-            <p className="HomeBanner_listText__JbAa7" data-cy="heroSection-list">+919703628658</p>
+            <p className="HomeBanner_listText__JbAa7" data-cy="heroSection-list">+91-8977523525</p>
           </div>
           </a>
       </div>

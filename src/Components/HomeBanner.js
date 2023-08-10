@@ -25,9 +25,10 @@ const HomeBanner = () => {
         <noscript></noscript>
       </div>
       <div className="HomeBanner_bannerContent__U267C">
-        <h1 className="HomeBanner_bannerHeading__LKqDp"> Building Your Path to Success</h1>
-        <p className="HomeBanner_bannerSubHeading__xWsg2">BP Finance's Student Loans - Empowering Students with Affordable Educational Funding</p>
-        <div className="HomeBanner_statsWrapper__kalzE">
+        {/* <h1 className="HomeBanner_bannerHeading__LKqDp"> Building Your Path to Success</h1>
+        <p className="HomeBanner_bannerSubHeading__xWsg2">We Fund Your Future - Empowering Students with Affordable Educational Funding</p>
+        */}
+        {/* <div className="HomeBanner_statsWrapper__kalzE">
           <div className="HomeBanner_listWrapper__40RV8">
             <span className="HomeBanner_iconWrapper__qPaUy">
               <img className='greenTick_bg'
@@ -107,15 +108,22 @@ const HomeBanner = () => {
           </div>
           
          
-        </div>
+        </div> */}
         <button className="HomeBanner_bannerBtnDesktop__K9OFK">
-          <p className="HomeBanner_btnText__yMOPW" onClick={openPopup}>Book Free Consultation</p>
+          <p className="HomeBanner_btnText__yMOPW" onClick={openPopup}>Apply For Loan</p>
           <ConnectModal isOpen={isOpen} onRequestClose={closePopup} />
         </button>
 
 
        
       </div>
+
+
+
+
+
+
+
       {/* <div className="HomeBanner_bannerBottomWrapper__j7nzu">
         <div className="HomeBanner_googleReview__OobHe">
           <img

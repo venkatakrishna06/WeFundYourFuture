@@ -5,12 +5,19 @@
 
 body {
   margin: 0;
-  font-family: 'Roboto', sans-serif;
+ 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: 'Roboto', sans-serif;
+
+
+@font-face {
+  font-family: 'Gotham Rounded';
+  src: url('./fonts/GothamRounded-Medium.otf') format('opentype');
+  /* Add other font formats if available */
+  font-weight: normal;
+  font-style: normal;
 }
+
 

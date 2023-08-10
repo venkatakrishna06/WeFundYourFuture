@@ -4,13 +4,13 @@ padding: 1% !important;
 }
 
   .navbar-logo {
-    height: 100%; /* Adjust the height as needed */
-    transform: scale(4);
-    width: 20%;
+    transform: scale(2);
+    width: 50px;
    
   }
   nav .nav-link{
     font-weight: bold;
+    cursor: pointer;
     color: #000 !important; 
    
   }
@@ -33,5 +33,4 @@ padding: 1% !important;
 
 
   }
-  
   

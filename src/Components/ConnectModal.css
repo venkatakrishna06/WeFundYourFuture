@@ -98,10 +98,13 @@
 /* Media query for small screens (up to 768px width) */
 @media screen and (max-width: 768px) {
   .popup-container {
-   height: 110vh;
+    background-image: none;
+  
     flex-direction: column; /* Display elements vertically on small screens */
   }
   .ReactModal__Content{
+    inset: 10px !important;
+    width: 95%;
    
    border-radius: 3% !important;
     margin: 0px !important;
@@ -113,14 +116,21 @@
   }
   .right-side {
     padding: 0px;
-    margin-top: 30%;
+    margin-top: 40%;
     width: 100% !important;
      /* Further reduced padding for small screens */
   }
 
 
   .close-button {
-    font-size: 2rem; /* Adjusted font size for small screens */
+    background: none;
+    position: absolute;
+    color: black;
+    top: 0px !important;
+    right: 2%;
+    font-size:4rem;
+    border: none;
+    cursor: pointer;
   }
 }
 

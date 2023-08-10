@@ -19,9 +19,9 @@ display: none;
   margin: 0;
   width: 100%;
   overflow: hidden;
-  height: 860px;
-  background-image:
-  url('../creative.svg');
+  height: 680px;
+  background-image:linear-gradient(to left, rgba(151, 146, 146, 0), rgb(19, 17, 19)),
+  url('https://img.freepik.com/free-photo/writing-essay_1098-14201.jpg?w=1800&t=st=1691662319~exp=1691662919~hmac=284c065b607fbcde1a48f4f552f516de8aad4f1e7a2f0def0ee5a4b20c4d2173');
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: 10%;
@@ -89,16 +89,17 @@ bottom: 21%;
   width: 56%;
   font-size: 1.5rem;
   line-height: 150%;
-  margin-bottom: 48px;
+  margin-bottom: 40px;
   
 }
 
 .HomeBanner_statsWrapper__kalzE{
  
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
+  
   width: 50%;
   margin-bottom: 42px;
 }
@@ -110,7 +111,7 @@ bottom: 21%;
   display: flex;
   align-items: center;
   width: 48%;
-  margin-bottom: 12px;
+  margin-bottom: 20px;
   margin-right: 8px;
 }
 
@@ -175,9 +176,9 @@ bottom: 21%;
   border: 1px solid rgba(98,198,83,.5);
   box-shadow: 4px 8px 30px rgba(0,0,0,.1);
   border-radius: 8px;
-  margin-top: 38%;
+ 
   padding: 12px 0;
-  width: 30%;
+  width: 20%;
 }
 
 .HomeBanner_btnText__yMOPW{
@@ -400,9 +401,9 @@ color: #fff;
   }
 
   .HomeBanner_bannerBtnDesktop__K9OFK {
-    padding: 1px 1px; /* Adjust padding */
-    margin-top: 70%;
-    width: 48%; /* Take full width */
+    padding: 8px 0px; /* Adjust padding */
+   text-align: center;
+    width: 100%; /* Take full width */
   }
   .HomeBanner_bannerBottomWrapper__j7nzu{
     display: none;
@@ -439,7 +440,7 @@ color: #fff;
     font-weight: 600;
     text-align: center;
     color: #fff;
-    font-size: 1rem;
+    font-size: 1.3rem;
     
   }
   .HomeBanner_reviewItem__ekYq1-sm {

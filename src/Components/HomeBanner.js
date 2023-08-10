@@ -25,10 +25,10 @@ const HomeBanner = () => {
         <noscript></noscript>
       </div>
       <div className="HomeBanner_bannerContent__U267C">
-        {/* <h1 className="HomeBanner_bannerHeading__LKqDp"> Building Your Path to Success</h1>
+        <h1 className="HomeBanner_bannerHeading__LKqDp"> Building Your Path to Success</h1>
         <p className="HomeBanner_bannerSubHeading__xWsg2">We Fund Your Future - Empowering Students with Affordable Educational Funding</p>
-        */}
-        {/* <div className="HomeBanner_statsWrapper__kalzE">
+       
+        <div className="HomeBanner_statsWrapper__kalzE">
           <div className="HomeBanner_listWrapper__40RV8">
             <span className="HomeBanner_iconWrapper__qPaUy">
               <img className='greenTick_bg'
@@ -64,7 +64,7 @@ const HomeBanner = () => {
               />
               <noscript></noscript>
             </span>
-            <p className="HomeBanner_listText__JbAa7" data-cy="heroSection-list">Dollar Loans</p>
+            <p className="HomeBanner_listText__JbAa7" data-cy="heroSection-list">Collateral Loans</p>
           </div>
           <div className="HomeBanner_listWrapper__40RV8">
             <span className="HomeBanner_iconWrapper__qPaUy">
@@ -108,7 +108,7 @@ const HomeBanner = () => {
           </div>
           
          
-        </div> */}
+        </div> 
         <button className="HomeBanner_bannerBtnDesktop__K9OFK">
           <p className="HomeBanner_btnText__yMOPW" onClick={openPopup}>Apply For Loan</p>
           <ConnectModal isOpen={isOpen} onRequestClose={closePopup} />

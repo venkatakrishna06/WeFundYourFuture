@@ -101,9 +101,9 @@ const NavBar = () => {
           <ConnectModal isOpen={isOpen} onRequestClose={closePopup} />
               </li>
             </ul>
-            <div className="navbar-button">
+            {/* <div className="navbar-button">
               <button className="btn submit-app-btn">Begin Loan Application</button>
-            </div>
+            </div> */}
           </Modal.Body>
 
         </Modal>

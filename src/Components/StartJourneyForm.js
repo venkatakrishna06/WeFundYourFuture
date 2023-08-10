@@ -1,11 +1,16 @@
 import './StartJourneyForm.css';
 import React, { useState } from 'react';
+
+import 'react-js-dropdavn/dist/index.css'
 import { initializeApp } from 'firebase/app'
 import {getFirestore} from 'firebase/firestore'
 import { collection, getDocs,addDoc } from "firebase/firestore";
 import { ref, getDownloadURL, uploadBytesResumable, getStorage } from "firebase/storage";
 import $ from "jquery";
 import { useNavigate } from "react-router-dom";
+import { FadeLoader } from 'react-spinners';
+import { SimpleDropdown } from 'react-js-dropdavn';
+import ChooseCountry from './ChooseCountry';
 const StartJourneyForm = ({closeModal}) => {
   const navigate = useNavigate();
   const firebaseConfig = {
@@ -20,6 +25,10 @@ const StartJourneyForm = ({closeModal}) => {
   const app = initializeApp(firebaseConfig);
   const db = getFirestore(app);
   const storage = getStorage(app);
+
+  const [isLoading, setLoading]= useState(false);
+
+
   const [formData, setFormData] = useState({
     first_name: '',
     last_name: '',
@@ -69,13 +78,17 @@ const StartJourneyForm = ({closeModal}) => {
   };
 
   const handleSubmitDataInSheet = (e) => {
+    setLoading(true);
     e.preventDefault();
     $.ajax({
       type        : 'POST',
       url         : 'https://script.google.com/macros/s/AKfycbyhlnLmi11zZMTN4k8vDz6-obrxY8o5cT6vFXvstFmzW9_amgCoLT-VEok9acXlQfa4nQ/exec',
       data        : formData,
     }).done(function(data) {
+      <FadeLoader color="#36d7b7" />
       if(data.result == 'success') {
+        setLoading(false);
+
         closeModal()
       }
       else {
@@ -92,6 +105,7 @@ const StartJourneyForm = ({closeModal}) => {
   const handleSubmit = async (event) => {
     event.preventDefault();
     const newErrors = {};
+   
 
     // Validation rules
     if (formData.first_name.trim() === '') {
@@ -164,6 +178,30 @@ const StartJourneyForm = ({closeModal}) => {
           })
     }
   }
+
+
+  const ChooseCountryMenu = [
+    {label: 'US', value: 'us'},
+    {label: 'UK', value: 'uk'},
+    {label: 'Ireland', value: 'ireland'},
+    {label: 'Canada', value: 'canada'},
+    {label: 'Germany', value: 'germany'},
+    
+  ]
+
+
+
+
+  const admissionStatusMenu=[
+    {label: 'Not Applied', value: 'NotApplied'},
+    {label: 'Applied', value: 'applied'},
+    {label: 'Confirmed', value: 'confirmed'},
+
+
+
+  ]
+
+
   return (
     <form onSubmit={handleSubmitDataInSheet}>
       <div className="container form-container">
@@ -239,12 +277,23 @@ const StartJourneyForm = ({closeModal}) => {
         <div className="row">
           <div className="col-md-6 col-sm-12">
             <div className="form-group">
-              <select
+            <SimpleDropdown
+            options={ChooseCountryMenu}
+            labels={{
+              notSelected: 'Select Country '
+            }}
+            
+      />
+
+            
+
+              {/* <select
                 id="country"
                 name="country"
                 className="form-control"
                 value={formData.country}
                 onChange={handleChange}
+                
               >
                 <option value="" disabled>Select Country</option>
                 <option value="IN">India</option>
@@ -252,7 +301,7 @@ const StartJourneyForm = ({closeModal}) => {
                 <option value="UK">UK</option>
                 <option value="AUS">Australia</option>
                 <option value="CA">Canada</option>
-              </select>
+              </select> */}
               {errors.country && <div className="error-msg">{errors.country}</div>}
             </div>
           </div>
@@ -289,7 +338,17 @@ const StartJourneyForm = ({closeModal}) => {
         <div className="row">
           <div className="col-md-6 col-sm-12">
             <div className="form-group">
-              <select
+
+
+            <SimpleDropdown
+            options={admissionStatusMenu}
+            labels={{
+              notSelected: 'Admission Status '
+            }}
+            
+      />
+
+              {/* <select
                 id="admissionStatus"
                 name="admissionStatus"
                 className="form-control"
@@ -301,7 +360,7 @@ const StartJourneyForm = ({closeModal}) => {
                 <option value="Applied">Applied</option>
                 <option value="Confirmed">Confirmed</option>
                 
-              </select>
+              </select> */}
               {errors.country && <div className="error-msg">{errors.admissionStatus}</div>}
             </div>
           </div>
@@ -321,7 +380,19 @@ const StartJourneyForm = ({closeModal}) => {
             </div>
           </div>
         </div>
-        <button type="submit" className="submit-button">Submit</button>
+        {
+         !isLoading && <>
+         <button type="submit" className="submit-button">Submit</button>
+        </>
+       }
+       {
+        isLoading && <>
+        <div className='loader-div'>
+        
+        <FadeLoader color="#36d7b7"  />
+        </div>
+        </>
+       }
       </div>
     </form>
   );

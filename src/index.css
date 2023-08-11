@@ -13,8 +13,23 @@ body {
 
 
 @font-face {
-  font-family: 'Gotham Rounded';
+  font-family: 'Gotham Medium';
   src: url('./fonts/GothamRounded-Medium.otf') format('opentype');
+  /* Add other font formats if available */
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Gotham Light';
+  src: url('./fonts/GothamRounded-Light.otf') format('opentype');
+  /* Add other font formats if available */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gotham Bold';
+  src: url('./fonts/GothamRounded-Bold.otf') format('opentype');
   /* Add other font formats if available */
   font-weight: normal;
   font-style: normal;

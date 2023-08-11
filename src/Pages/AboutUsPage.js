@@ -21,16 +21,13 @@ const AboutUsPage = () => {
       <div className="col-md-6">
         <div className="row g-0  overflow-hidden flex-md-row mb-4 h-md-250 position-relative">
           <div className="col p-4 d-flex flex-column position-static">
-            <h4>
-              <strong className="d-inline-block mb-2 text-primary-emphasis">
-                <b><span className="text-success title">Our Story</span></b>
-              </strong>
-            </h4>
-            <h3 className="mb-0">
+              <div className="d-inline-block mb-2 text-primary-emphasis">
+                <span className="text-success title">Our Story</span>
+              </div>
+            <div className="mb-0">
             At We Fund Your Future, we have a proven track record of providing educational loans to support students in pursuing their academic dreams
-            </h3>
+            </div>
             <span className="float">
-
               <p className="card-text mb-auto">Our experience in offering educational loans sets us apart as a trusted financial partner for students and their families.
               We offer affordable financing with competitive interest rates. Our streamlined online process makes applying quick and hassle-free.
               We operate with transparency and fairness.Our friendly team is ready to assist you at every step.
@@ -40,12 +37,12 @@ const AboutUsPage = () => {
           
         </div>
         <div className="col misson-container d-flex flex-column position-static">
-        <h4>
-              <strong className="d-inline-block mb-2 text-primary-emphasis">
-                <b><span className="text-success title">Our Mission</span></b>
-              </strong>
-            </h4>
-            <p className="text-data card-text ">When you choose We Fund Your Future for your educational loan, you benefit from our extensive experience and dedication to helping students fulfill their educational aspirations. Trust us to provide the financial support you need to embark on a successful educational journey.</p>
+
+              <div className="d-inline-block mb-2 text-primary-emphasis">
+                <span className="text-success title">Our Mission</span>
+              </div>
+
+            <p className="card-text ">When you choose We Fund Your Future for your educational loan, you benefit from our extensive experience and dedication to helping students fulfill their educational aspirations. Trust us to provide the financial support you need to embark on a successful educational journey.</p>
             <div className="percentage">
               <div>
                 <h1>20 +</h1>
@@ -74,7 +71,7 @@ const AboutUsPage = () => {
           <div className="col p-4 d-flex flex-column position-static">
           <h4>
               <strong className="d-inline-block mb-2 text-primary-emphasis">
-                <b><span className="title">Here's why our experience makes us the ideal choice for your educational loan needs:</span></b>
+                <b><span className="title normal">Here's why our experience makes us the ideal choice for your educational loan needs:</span></b>
               </strong>
             </h4>
             <h3 className="mb-0 title"><span className="number text-success">01. </span>Specialized Focus</h3>

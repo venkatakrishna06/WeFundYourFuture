@@ -3,7 +3,6 @@
    width: 100%;
    padding: 18px 10%;
     height: 75px;
-    border: 1px solid rgba(36, 35, 35, 0.848);
     border-radius: 15px;
   }
 
@@ -16,7 +15,6 @@
   
   .country-name {
     padding-top: 4px;
-    font-weight: bold;
-    font-size: 18px; 
+    font-size: 19px;
   }
 

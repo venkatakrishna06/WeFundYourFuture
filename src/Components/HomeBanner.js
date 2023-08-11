@@ -25,10 +25,10 @@ const HomeBanner = () => {
         <noscript></noscript>
       </div>
       <div className="HomeBanner_bannerContent__U267C">
-        <h1 className="HomeBanner_bannerHeading__LKqDp"> Building Your Path to Success</h1>
-        <p className="HomeBanner_bannerSubHeading__xWsg2">We Fund Your Future - Empowering Students with Affordable Educational Funding</p>
+        <div className="HomeBanner_bannerHeading__LKqDp animate__animated animate__backInLeft"> Building Your Path to Success</div>
+        <p className="HomeBanner_bannerSubHeading__xWsg2 animate__animated animate__backInRight">We Fund Your Future - Empowering Students with Affordable Educational Funding</p>
        
-        <div className="HomeBanner_statsWrapper__kalzE">
+        <div className="HomeBanner_statsWrapper__kalzE animate__animated animate__backInLeft">
           <div className="HomeBanner_listWrapper__40RV8">
             <span className="HomeBanner_iconWrapper__qPaUy">
               <img className='greenTick_bg'
@@ -109,8 +109,8 @@ const HomeBanner = () => {
           
          
         </div> 
-        <button className="HomeBanner_bannerBtnDesktop__K9OFK">
-          <p className="HomeBanner_btnText__yMOPW" onClick={openPopup}>Apply For Loan</p>
+        <button className="HomeBanner_bannerBtnDesktop__K9OFK animate__animated animate__bounce">
+          <p className="HomeBanner_btnText__yMOPW" onClick={openPopup}>Apply for Loan</p>
           <ConnectModal isOpen={isOpen} onRequestClose={closePopup} />
         </button>
 

@@ -40,7 +40,7 @@ function ChooseCountry() {
 
     return (
         <div className='container'>
-            <h2 class="trusted_title mt-5">Choose Your Dream Country</h2>
+            <h2 class="trusted_title">Countries We Support</h2>
             <div class="ChooseCountry_grid-container">
                 {
                     availableCountries.map((countries, index) => (

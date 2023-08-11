@@ -28,9 +28,8 @@
   }
 
   .left-side {
-
+      font-family: "Gotham Rounded", serif;
     flex: 1;
-    background-image: url(''); /* Replace with the actual path of your background image */
     background-size: cover;
     color: #fff;
     padding: 50px;
@@ -46,10 +45,9 @@
     padding: 50px;
   }
   .left-side .title1{
-    font-weight: bold;
     margin-top: 5%;
-  margin-left: 3%;
-    font-size: 3rem;
+    margin-left: 3%;
+    font-size: 41px;
 
   }
   .left-side .title2{
@@ -70,20 +68,16 @@
   
   
 }
-.leftside_JDBS .HomeBanner_listText__JbAa7{
-  font-size: 1.5rem;
-  font-weight: bold;
-}
 
 .leftSide_bottom_contact{
  margin-top: 15%;
-  font-size: 1rem;
-  font-weight: bold;
+  font-size: 17px;
 }
   
   
 .quick_assist_call{
  margin-top: 2%;
+    font-size: 15px;
 }
 .quick_assist_call a{
   text-decoration: none;

@@ -4,7 +4,7 @@ import './WhyChooseUs.css';
 function WhyChooseUs(){
     return(
         <div className='container'>
-<h2 class="trusted_title mt-5">Why Choose Us?</h2>
+<h2 class="trusted_title">Why Choose Us?</h2>
     <div class="whyChoose_grid-container">
     <div class="grid-item2">Competitive rates</div>
     <div className='grid-item2'>Fast approval</div>

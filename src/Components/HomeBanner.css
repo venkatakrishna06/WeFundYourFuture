@@ -1,9 +1,14 @@
+.HomeBanner_bannerHeading__LKqDp{
+  font-size: 41px;
+  color: white;
+
+}
 .HomeBanner_homeBanner__8Wzs_{
   font-weight: 400;
   line-height: 1.5;
   font-size: 1.6rem;
   color: inherit;
- 
+
   margin: 0;
   padding: 0;
   mix-blend-mode: normal;
@@ -82,14 +87,11 @@ bottom: 21%;
 }
 
 .HomeBanner_bannerSubHeading__xWsg2 {
-  
-
   color: #fff;
-  width: 56%;
-  font-size: 1.5rem;
+  width: 62%;
+  font-size: 21px;
   line-height: 150%;
   margin-bottom: 40px;
-  
 }
 
 .HomeBanner_statsWrapper__kalzE{
@@ -164,7 +166,7 @@ bottom: 21%;
   font-weight: 400;
   text-transform: capitalize;
   color: #fff;
-  font-size: 1.4rem;
+  font-size: 21px;
  
 }
 
@@ -172,12 +174,10 @@ bottom: 21%;
  
   cursor: pointer;
   background: linear-gradient(270.01deg,#418a41,#4ca94c 100.03%);
-  border: 1px solid rgba(98,198,83,.5);
-  box-shadow: 4px 8px 30px rgba(0,0,0,.1);
-  border-radius: 8px;
- 
-  padding: 12px 0;
-  width: 20%;
+  border-radius: 40px;
+  border:0;
+  padding: 12px 25px;
+
 }
 
 .HomeBanner_btnText__yMOPW{
@@ -185,11 +185,9 @@ bottom: 21%;
   cursor: pointer;
   margin: 0;
   padding: 0;
- 
-  font-weight: 600;
   text-align: center;
   color: #fff;
-  font-size: 1.3rem;
+  font-size: 19px;
   
 }
 
@@ -432,14 +430,12 @@ color: #fff;
   
   
   .HomeBanner_btnText__yMOPW{
- 
     cursor: pointer;
     margin: 0;
     padding: 0;
-    font-weight: 600;
     text-align: center;
     color: #fff;
-    font-size: 1.3rem;
+    font-size: 19px;
     
   }
   .HomeBanner_reviewItem__ekYq1-sm {

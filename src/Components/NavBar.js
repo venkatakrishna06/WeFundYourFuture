@@ -5,7 +5,7 @@ import ConnectModal from './ConnectModal';
 import './NavBar.css';
 import { Link } from 'react-router-dom';
 import logo from '../logo.png'
-
+import 'animate.css'
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -41,7 +41,7 @@ const NavBar = () => {
   return (
     <nav className="navbar navbar-expand-lg">
       <div className="container">
-        <a className="brand" href="/">
+        <a className="brand animate__animated animate__bounce" href="/">
           <img src={logo} alt="Logo" className="navbar-logo" />
         </a>
         {isSmallScreen ? (
@@ -51,7 +51,7 @@ const NavBar = () => {
             </button>
           </>
         ) : (
-          <div className="collapse navbar-collapse" id="navbarNav">
+          <div className="collapse navbar-collapse animate__animated animate__bounce" id="navbarNav">
             <ul className="navbar-nav ms-auto">
               <li className="nav-item">
                 <Link className="nav-link" to="/">

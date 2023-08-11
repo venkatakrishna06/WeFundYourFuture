@@ -1,26 +1,29 @@
 /* Custom NavBar styles */
+.navbar{
+  min-height: 100px;
+}
 nav{
 padding: 1% !important;
 }
 
   .navbar-logo {
-    transform: scale(2);
+    transform: scale(3);
     width: 50px;
    
   }
   nav .nav-link{
-    font-size: 1.2rem;
-   
-    font-weight: 500;
+    transition: 0.3s ease;
+    font-size: 17px;
     cursor: pointer;
-    color: #000 !important; 
+    color: #000;
+    margin-right:20px;
    
   }
   nav .nav-link:hover{
-    font-weight: 500;
-    cursor: pointer;
-    color: rgba(96, 87, 87, 0.505) !important; 
-   
+    border-top: 1px solid #4ca94c;
+    border-bottom: 1px solid #4ca94c;
+    padding: 6px 0;
+    color: #4ca94c
   }
   .brand{
     margin-left: 3%;

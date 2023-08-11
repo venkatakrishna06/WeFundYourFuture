@@ -18,7 +18,7 @@ const ConnectModal = ({ isOpen, onRequestClose }) => {
 <div className="left-side">
 <h1 className='title1'>We Fund Your Future</h1>
 <div className='leftside_JDBS'>
-        <h2 className='title2'>Why US ?</h2>
+        {/*<h2 className='title2'>Why US ?</h2>*/}
         <div className="HomeBanner_listWrapper__40RV8">
             <span className="HomeBanner_iconWrapper__qPaUy">
               <img className='greenTick_bg'

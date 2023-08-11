@@ -18,9 +18,8 @@
   }
   
   .title-div p{
-    font-weight: bold;
-    font-size: 1.7rem ;
-    /* Add your styles for the title text here */
+    font-size: 25px ;
+
   }
   
   /* 2nd div with the dot */
@@ -61,8 +60,8 @@ border-radius: 10px;
   }
   
   .step-text {
-    //padding-top: 5%;
-    font-size: 1.1rem;
+    /*padding-top: 5%;*/
+    font-size: 19px;
     /* Add any styles for the text container here */
   }
   

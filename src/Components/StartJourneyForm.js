@@ -38,7 +38,6 @@ const StartJourneyForm = ({closeModal}) => {
     loanAmount:'',
     admissionStatus:'',
     targetIntake:'',
-    dateSubmitted: new Date(),
     file_input: null,
   });
 
@@ -83,7 +82,7 @@ const StartJourneyForm = ({closeModal}) => {
     e.preventDefault();
     $.ajax({
       type        : 'POST',
-      url         : 'https://script.google.com/macros/s/AKfycbyhlnLmi11zZMTN4k8vDz6-obrxY8o5cT6vFXvstFmzW9_amgCoLT-VEok9acXlQfa4nQ/exec',
+      url         : 'https://script.google.com/macros/s/AKfycbxrisAdSoT97H178y0yt0sZkvorjshpWlhZ88Bm8NCHA97CuhlWiboVfYgr5A8C1d5rxQ/exec',
       data        : formData,
     }).done(function(data) {
       <FadeLoader color="#36d7b7" />

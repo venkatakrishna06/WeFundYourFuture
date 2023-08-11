@@ -38,6 +38,7 @@ const StartJourneyForm = ({closeModal}) => {
     loanAmount:'',
     admissionStatus:'',
     targetIntake:'',
+    dateSubmitted: new Date(),
     file_input: null,
   });
 

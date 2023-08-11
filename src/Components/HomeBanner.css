@@ -20,8 +20,7 @@ display: none;
   width: 100%;
   overflow: hidden;
   height: 680px;
-  background-image:linear-gradient(to left, rgba(151, 146, 146, 0), rgb(19, 17, 19)),
-  url('https://img.freepik.com/free-photo/writing-essay_1098-14201.jpg?w=1800&t=st=1691662319~exp=1691662919~hmac=284c065b607fbcde1a48f4f552f516de8aad4f1e7a2f0def0ee5a4b20c4d2173');
+  background-image: url('../banner.jpeg');
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: 10%;
@@ -34,11 +33,11 @@ width: initial;
 height: initial;
 background: none;
 opacity: 1;
-border: 0px;
-margin: 0px;
-padding: 0px;
+border: 0;
+margin: 0;
+padding: 0;
 position: absolute;
-inset: 0px;
+inset: 0;
 }
 
 .HomeBanner_imageContainer__jGCwF img{

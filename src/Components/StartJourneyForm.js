@@ -277,23 +277,12 @@ const StartJourneyForm = ({closeModal}) => {
         <div className="row">
           <div className="col-md-6 col-sm-12">
             <div className="form-group">
-            <SimpleDropdown
-            options={ChooseCountryMenu}
-            labels={{
-              notSelected: 'Select Country '
-            }}
-            
-      />
-
-            
-
-              {/* <select
+              <select
                 id="country"
                 name="country"
                 className="form-control"
                 value={formData.country}
                 onChange={handleChange}
-                
               >
                 <option value="" disabled>Select Country</option>
                 <option value="IN">India</option>
@@ -301,7 +290,7 @@ const StartJourneyForm = ({closeModal}) => {
                 <option value="UK">UK</option>
                 <option value="AUS">Australia</option>
                 <option value="CA">Canada</option>
-              </select> */}
+              </select>
               {errors.country && <div className="error-msg">{errors.country}</div>}
             </div>
           </div>
@@ -338,17 +327,7 @@ const StartJourneyForm = ({closeModal}) => {
         <div className="row">
           <div className="col-md-6 col-sm-12">
             <div className="form-group">
-
-
-            <SimpleDropdown
-            options={admissionStatusMenu}
-            labels={{
-              notSelected: 'Admission Status '
-            }}
-            
-      />
-
-              {/* <select
+              <select
                 id="admissionStatus"
                 name="admissionStatus"
                 className="form-control"
@@ -360,7 +339,7 @@ const StartJourneyForm = ({closeModal}) => {
                 <option value="Applied">Applied</option>
                 <option value="Confirmed">Confirmed</option>
                 
-              </select> */}
+              </select>
               {errors.country && <div className="error-msg">{errors.admissionStatus}</div>}
             </div>
           </div>

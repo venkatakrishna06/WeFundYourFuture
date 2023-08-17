@@ -21,7 +21,7 @@
 }
 
 .TAndCheading {
-    margin-top: 10px;
+    margin-top: 20px;
   color: green;
   font-family: 'Gotham Bold';
   font-weight: 400;
@@ -35,7 +35,7 @@
   color: #000000;
   font-family: "Gotham Medium";
   font-weight: 700;
-  font-size: 20px;
+  font-size: 18px;
   text-transform: uppercase;
   letter-spacing: -0.5px;
   margin: 20px 0px 10px 100px;
@@ -56,16 +56,17 @@
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     .TAndCheading {
-        font-size: 22px;
+      margin-top: 3%;
+        font-size: 20px;
       }
 
   .TAndCsub_heading {
-    font-size: 18px;
+    font-size: 14px;
     margin: 20px 30px 10px 30px;
   }
 
   .para {
-    font-size: 13px;
+    font-size: 12px;
     margin: 10px 30px 10px 30px;
   }
 }
@@ -73,6 +74,7 @@
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 601px) {
     .TAndCheading {
+      margin-top: 2%;
         font-size: 25px;
       }
 

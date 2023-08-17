@@ -19,7 +19,7 @@ function Footer() {
 
         <footer class="footer-section" >
             <div class="container">
-                <div class="footer-content pt-5 pb-5">
+                <div class="footer-content ">
                     <div class="row">
                         <div class="col-xl-4 col-lg-4 mb-50">
                             <div class="footer-widget">

@@ -9,7 +9,6 @@ padding: 1% !important;
   .navbar-logo {
     transform: scale(3);
     width: 50px;
-   
   }
   nav .nav-link{
     transition: 0.3s ease;
@@ -45,7 +44,14 @@ padding: 1% !important;
 
   }
   @media screen and (max-width: 768px) {
+    .navbar{
+      min-height: 64px;
+    }
 
+    .navbar-logo {
+      transform: scale(2);
+      width: 50px;
+    }
 
 
     nav{

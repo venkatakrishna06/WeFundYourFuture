@@ -41,29 +41,14 @@
     font-weight: 500;
     font-size: 1.5rem;
 }
-
-
-.cupcake {
-    height: 80px;
-    width: 100px;
-    float: left;
-    border-radius: 50%;
-}
-
 .float {
     margin: 0;
     padding: 0;
     padding-top: 10px;
 }
-
 p {
     margin: 0;
     padding: 0;
-}
-
-.number {
-
-
 }
 
 .card-text {
@@ -89,12 +74,12 @@ p {
 }
 
 .title {
-    font-size: 41px;
+    font-size: 24px;
     color: #403d39;
 
 }
-.title.normal{
-    font-size: 23px;
+ .normal{
+    font-size: 24px;
 }
 
 .misson-container {
@@ -110,5 +95,31 @@ p {
 }
 
 .mb-0{
-    font-size: 21px;
+    font-size: 15px;
+}
+
+
+@media screen and (max-width: 768px) {
+
+
+.text-overlay {
+    position: absolute;
+    top: 80%;
+    left: 38%;
+    
+    transform: translate(-50%, -50%);
+    color: white;}
+    .text-overlay h1{
+        font-size: 25px;
+    
+    }
+
+
+
+    .card-text{
+        font-size: 15px;
+    }
+  .normal{
+        font-size: 18px;
+    }
 }

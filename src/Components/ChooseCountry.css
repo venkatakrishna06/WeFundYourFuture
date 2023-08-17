@@ -4,17 +4,31 @@
    padding: 18px 10%;
     height: 75px;
     border-radius: 15px;
+    align-items: center;
   }
 
 .grid-item1 img{
-    width: 25%;
+  
     height: 100%;
   
     
   }
   
   .country-name {
-    padding-top: 4px;
+    padding-top: 2%;  
     font-size: 19px;
+  }
+
+  @media screen and (max-width: 768px) {
+    .country-name {
+      
+
+      font-size: 15px;
+    }
+
+
+
+
+
   }
 

@@ -15,7 +15,7 @@ const NavBar = () => {
   };
 
   const closePopup = () => {
-    window.location.reload(false);
+   
     setIsOpen(false);
     document.body.style.overflow = 'auto';
   };
@@ -59,7 +59,7 @@ const NavBar = () => {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/about" target="_blank" rel="noopener noreferrer">
+                <Link className="nav-link" to="/about" rel="noopener noreferrer">
                   About Us
                 </Link>
               </li>

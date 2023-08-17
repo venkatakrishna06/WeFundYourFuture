@@ -3,7 +3,7 @@
     position: relative;
     display: flex;
     justify-content: center;
-    max-height: 100%;
+
     padding-top: 1.5%;
     background-image:  linear-gradient(to right, rgba(31, 31, 32, 0.953), rgba(185, 180, 185, 0.04)), url('https://cdn.pixabay.com/photo/2016/05/25/07/56/start-1414148_1280.jpg');
     background-size: cover;
@@ -110,7 +110,7 @@
   }
   .right-side {
     padding: 0px;
-    margin-top: 40%;
+    margin-top: 10%;
     width: 100% !important;
      /* Further reduced padding for small screens */
   }
@@ -122,7 +122,7 @@
     color: black;
     top: 0px !important;
     right: 2%;
-    font-size:4rem;
+    font-size:2.5rem;
     border: none;
     cursor: pointer;
   }

@@ -7,12 +7,14 @@ import {getFirestore} from 'firebase/firestore'
 import { collection, getDocs,addDoc } from "firebase/firestore";
 import { ref, getDownloadURL, uploadBytesResumable, getStorage } from "firebase/storage";
 import $ from "jquery";
-import { useNavigate } from "react-router-dom";
+import { Dropdown } from 'react-dropdown-now';
+import 'react-dropdown-now/style.css';
+//import { useNavigate } from "react-router-dom";
 import { FadeLoader } from 'react-spinners';
-import { SimpleDropdown } from 'react-js-dropdavn';
-import ChooseCountry from './ChooseCountry';
+import toast, { Toaster } from 'react-hot-toast';
+
 const StartJourneyForm = ({closeModal}) => {
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
   const firebaseConfig = {
     apiKey: "AIzaSyDJa0wWs8YV4ImbYj55Uq6bgnIcN-nCHFk",
     authDomain: "we-fund-your-future.firebaseapp.com",
@@ -38,6 +40,7 @@ const StartJourneyForm = ({closeModal}) => {
     loanAmount:'',
     admissionStatus:'',
     targetIntake:'',
+    dateSubmitted: new Date(),
     file_input: null,
   });
 
@@ -54,11 +57,13 @@ const StartJourneyForm = ({closeModal}) => {
   });
 
   const handleChange = (event) => {
+    
     const { name, value } = event.target;
     setFormData((prevData) => ({
       ...prevData,
       [name]: value,
     }));
+  
     setErrors((prevErrors) => ({
       ...prevErrors,
       [name]: '',
@@ -78,15 +83,18 @@ const StartJourneyForm = ({closeModal}) => {
   };
 
   const handleSubmitDataInSheet = (e) => {
+    console.log('submitted data ', formData)
     setLoading(true);
     e.preventDefault();
     $.ajax({
       type        : 'POST',
-      url         : 'https://script.google.com/macros/s/AKfycbxrisAdSoT97H178y0yt0sZkvorjshpWlhZ88Bm8NCHA97CuhlWiboVfYgr5A8C1d5rxQ/exec',
+      url         : 'https://script.google.com/macros/s/AKfycbyhlnLmi11zZMTN4k8vDz6-obrxY8o5cT6vFXvstFmzW9_amgCoLT-VEok9acXlQfa4nQ/exec',
       data        : formData,
     }).done(function(data) {
-      <FadeLoader color="#36d7b7" />
+      
       if(data.result == 'success') {
+        toast.success('Here is your toast.')
+       
         setLoading(false);
 
         closeModal()
@@ -102,6 +110,8 @@ const StartJourneyForm = ({closeModal}) => {
 
   }
 
+
+  
   const handleSubmit = async (event) => {
     event.preventDefault();
     const newErrors = {};
@@ -180,30 +190,31 @@ const StartJourneyForm = ({closeModal}) => {
   }
 
 
-  const ChooseCountryMenu = [
-    {label: 'US', value: 'us'},
-    {label: 'UK', value: 'uk'},
-    {label: 'Ireland', value: 'ireland'},
-    {label: 'Canada', value: 'canada'},
-    {label: 'Germany', value: 'germany'},
+  // const ChooseCountryMenu = [
+  //   {label: 'US', value: 'us'},
+  //   {label: 'UK', value: 'uk'},
+  //   {label: 'Ireland', value: 'ireland'},
+  //   {label: 'Canada', value: 'canada'},
+  //   {label: 'Germany', value: 'germany'},
     
-  ]
+  // ]
 
 
 
 
-  const admissionStatusMenu=[
-    {label: 'Not Applied', value: 'NotApplied'},
-    {label: 'Applied', value: 'applied'},
-    {label: 'Confirmed', value: 'confirmed'},
+  // const admissionStatusMenu=[
+  //   {label: 'Not Applied', value: 'NotApplied'},
+  //   {label: 'Applied', value: 'applied'},
+  //   {label: 'Confirmed', value: 'confirmed'},
 
 
 
-  ]
+  // ]
 
 
   return (
     <form onSubmit={handleSubmitDataInSheet}>
+       
       <div className="container form-container">
         <div className="form-title">
         <h2 className="form-title">Start your journey now</h2>
@@ -277,7 +288,26 @@ const StartJourneyForm = ({closeModal}) => {
         <div className="row">
           <div className="col-md-6 col-sm-12">
             <div className="form-group">
-              <select
+            <Dropdown
+  placeholder="Choose Country"
+  options={['UK', 'US','Canada', 'Germany', 'France','Ireland',]}
+  value=""
+  // onChange={(value) => console.log('change!', value)}
+  onSelect={(value) => formData.country= value.value} // always fires once a selection happens even if there is no change
+  // onClose={(closedBySelection) => console.log('closedBySelection?:', closedBySelection)}
+  // onOpen={() => console.log('open!')}
+/>
+
+
+
+
+
+
+
+
+
+
+              {/* <select
                 id="country"
                 name="country"
                 className="form-control"
@@ -290,7 +320,7 @@ const StartJourneyForm = ({closeModal}) => {
                 <option value="UK">UK</option>
                 <option value="AUS">Australia</option>
                 <option value="CA">Canada</option>
-              </select>
+              </select> */}
               {errors.country && <div className="error-msg">{errors.country}</div>}
             </div>
           </div>
@@ -327,7 +357,23 @@ const StartJourneyForm = ({closeModal}) => {
         <div className="row">
           <div className="col-md-6 col-sm-12">
             <div className="form-group">
-              <select
+
+            <Dropdown
+  placeholder="Admission Status"
+  options={['Not Applied', 'Applied','Confirmed']}
+  value=""
+  // onChange={(value) => console.log('change!', value)}
+  onSelect={(value) => formData.admissionStatus= value.value} // always fires once a selection happens even if there is no change
+  // onClose={(closedBySelection) => console.log('closedBySelection?:', closedBySelection)}
+  // onOpen={() => console.log('open!')}
+/>
+
+
+
+
+
+
+              {/* <select
                 id="admissionStatus"
                 name="admissionStatus"
                 className="form-control"
@@ -339,7 +385,7 @@ const StartJourneyForm = ({closeModal}) => {
                 <option value="Applied">Applied</option>
                 <option value="Confirmed">Confirmed</option>
                 
-              </select>
+              </select> */}
               {errors.country && <div className="error-msg">{errors.admissionStatus}</div>}
             </div>
           </div>
@@ -352,6 +398,7 @@ const StartJourneyForm = ({closeModal}) => {
                 className="form-control"
                 value={formData.targetIntake}
                 onChange={handleChange}
+                required
 
               />
               <label htmlFor="targetIntake">Target Intake</label>
@@ -362,6 +409,7 @@ const StartJourneyForm = ({closeModal}) => {
         {
          !isLoading && <>
          <button type="submit" className="submit-button">Submit</button>
+         <Toaster />
         </>
        }
        {
@@ -369,6 +417,7 @@ const StartJourneyForm = ({closeModal}) => {
         <div className='loader-div'>
         
         <FadeLoader color="#36d7b7"  />
+        
         </div>
         </>
        }

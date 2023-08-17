@@ -12,7 +12,7 @@ const HomeBanner = () => {
   };
 
   const closePopup = () => {
-    window.location.reload(false);
+  
     setIsOpen(false);
     document.body.style.overflow = 'auto';
   };

@@ -1,5 +1,5 @@
 {
-  "name": "unicredclone",
+  "name": "WeFundYourFuture",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -14,6 +14,8 @@
     "react": "^18.2.0",
     "react-bootstrap": "^2.8.0",
     "react-dom": "^18.2.0",
+    "react-dropdown-now": "^6.0.1",
+    "react-hot-toast": "^2.4.1",
     "react-js-dropdavn": "^1.0.4",
     "react-modal": "^3.16.1",
     "react-router-dom": "^6.14.2",
@@ -29,7 +31,10 @@
     "start": "export HTTPS=true&&SSL_CRT_FILE=cert.pem&&SSL_KEY_FILE=key.pem react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "server": "live-server public --host=0.0.0.0 --port=3000 --middleware=./disable-browser-cache.js"
+
+
   },
   "eslintConfig": {
     "extends": [

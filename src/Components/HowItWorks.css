@@ -34,15 +34,17 @@
   
   @media screen and (max-width: 768px) {
     .howItWorksContainer {
+ 
       margin-top: 20px;
       /* Hide the left container on small screens */
       flex-direction: column;
     }
     .HowItWorks_title{
-      margin-top: 0px;
-      margin-bottom: 8%;
-      text-align: center;
-      font-size: 40px;
+      margin-top: 10px;
+      margin-bottom: 5px;
+    
+      text-align: left;
+      font-size: 30px;
     }
   
     .HowItWorks_leftContainer {
@@ -50,6 +52,7 @@
     }
   
     .HowItWorks_rightContainer {
+      padding: 5%;
       /* Adjust the width of the right container to take full width on small screens */
       flex: 100%;
     }

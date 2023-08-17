@@ -11,7 +11,7 @@ function HowItWorks() {
   };
 
   const closePopup = () => {
-    window.location.reload(false);
+
     setIsOpen(false);
     document.body.style.overflow = 'auto';
   };

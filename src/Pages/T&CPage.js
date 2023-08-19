@@ -1,4 +1,5 @@
 import React from 'react';
+import Footer from '../Components/Footer';
 import './T&CPage.css';
 
 function TermsAndConditionsPage() {
@@ -122,15 +123,9 @@ function TermsAndConditionsPage() {
                 * By continuing to use our services, you acknowledge that you have read and understood this Privacy Policy and agree to its terms.
                 </p>
 
-                
-
-
-
-
-
-
 
             </div>
+            <Footer></Footer>
         </div>
     );
 };

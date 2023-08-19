@@ -83,7 +83,9 @@ function Footer() {
                                     <li> <a href="#">
                                     <p  onClick={openPopup}>Contact us</p>
           <ConnectModal isOpen={isOpen} onRequestClose={closePopup} />
+
           </a>
+           <li><a href="/privacyPolicy" >Privacy Policy</a></li>
 
 
 

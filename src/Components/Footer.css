@@ -3,14 +3,14 @@ ul {
   padding: 0px;
 }
 .footer-section {
-background: #151414;
+background: #343a40;
 position: relative;
-margin-top: 4%;
+margin-top: 2%;
 
 }
 .footer-widget{
   margin-left: 10%;
-  margin-bottom: 10%;
+  margin-bottom: 5%;
 }
 .footer-widget-heading{
   color:white;
@@ -20,7 +20,7 @@ margin-top: 4%;
 }
 
 .footer-content {
-  padding-top: 50px;
+  padding-top:20px;
 position: relative;
 z-index: 2;
 }

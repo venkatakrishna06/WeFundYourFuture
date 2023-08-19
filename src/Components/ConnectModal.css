@@ -21,10 +21,10 @@
   }
 
   .ReactModal__Content{
-    margin-left: 7%;
-    border-radius: 3% !important;
+    margin:0 auto;
+    border-radius: 20px !important;
     width: 80%;
-    padding: 0px !important;
+    padding: 0 !important;
   }
 
   .left-side {
@@ -32,7 +32,7 @@
     flex: 1;
     background-size: cover;
     color: #fff;
-    padding: 50px;
+    padding: 20px;
   }
   
   .left-side h1 {
@@ -42,7 +42,7 @@
   
   .right-side {
     flex: 1;
-    padding: 50px;
+      padding: 0 60px 0 0;
   }
   .left-side .title1{
     margin-top: 5%;
@@ -120,8 +120,8 @@
     background: none;
     position: absolute;
     color: black;
-    top: 0px !important;
-    right: 2%;
+    top: 0 !important;
+    right: 1%;
     font-size:2.5rem;
     border: none;
     cursor: pointer;

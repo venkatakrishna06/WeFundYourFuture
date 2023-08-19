@@ -11,12 +11,14 @@ const NavBar = () => {
 
   const openPopup = () => {
     setIsOpen(true);
+    setIsModalOpen(!isModalOpen);
+ 
     document.body.style.overflow = 'hidden';
   };
 
   const closePopup = () => {
-   
     setIsOpen(false);
+    
     document.body.style.overflow = 'auto';
   };
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -87,12 +89,12 @@ const NavBar = () => {
           <Modal.Body>
             <ul className="navbar-nav">
               <li className="nav-item">
-                <Link className="nav-link" to="/">
+                <Link className="nav-link" to="/"  onClick={toggleModal}>
                   Home
                 </Link>
               </li>
               <li className="nav-item">
-              <Link className="nav-link" to="/about">
+              <Link className="nav-link" to="/about" onClick={toggleModal}>
                   About Us
                 </Link>
               </li>

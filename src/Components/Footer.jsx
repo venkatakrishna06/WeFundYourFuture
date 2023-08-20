@@ -1,7 +1,8 @@
 import React ,{useState}from 'react';
 import './Footer.css';
-import ConnectModal from './ConnectModal';
-import logo from '../logo.png'
+import ConnectModal from './ConnectModal'
+import footerLogo from '../assets/footer_logo.png'
+
 function Footer() {
     const [isOpen, setIsOpen] = useState(false);
 
@@ -24,16 +25,13 @@ function Footer() {
                         <div class="col-xl-4 col-lg-4 mb-50">
                             <div class="footer-widget">
                                 <div class="footer-logo">
-                                    <a href="index.html"><img src={logo} class="img-fluid" alt="logo" /></a>
+                                    <a href="index.html"><img src={footerLogo} class="img-fluid" alt="logo" /></a>
                                 </div>
                                 <div class="footer-text">
                                     <p>Building Your Path to Success </p>
                                 </div>
                                
                             </div>
-
-
-                            
                         </div>
 
                         <div class="col-xl-4 col-lg-4 mb-50">

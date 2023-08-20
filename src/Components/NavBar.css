@@ -5,6 +5,9 @@
 nav{
 padding: 1% !important;
 }
+/* .dropdown-toggle{
+  display: none !important;
+} */
 
   .navbar-logo {
     transform: scale(3);
@@ -43,7 +46,34 @@ padding: 1% !important;
 
 
   }
-  @media screen and (max-width: 768px) {
+  #nav-small-menu{
+    display: none !important;
+  }
+  .dropdown-toggle::after{
+    display: none;
+  }
+  @media screen and (max-width: 985px) {
+  
+    #navbarNav{
+      display: none;
+    }
+    #nav-small-menu{
+    display: flex !important;
+    }
+
+    .dropdown-item{
+      font-size: 15px;
+      padding: 10px;
+    }
+#dropdown-basic{
+  border: none !important;
+}
+
+
+
+    .dropdown-toggle::after{
+      display: none;
+    }
     .navbar{
       min-height: 64px;
     }

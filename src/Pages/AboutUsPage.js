@@ -1,4 +1,5 @@
 import React from 'react';
+import Footer from '../Components/Footer';
 import './AboutUsPage.css'; // Import your custom CSS file here
 
 const AboutUsPage = () => {
@@ -94,6 +95,7 @@ const AboutUsPage = () => {
     </div>
     
   </div>
+<Footer></Footer>
 
            </div>
     

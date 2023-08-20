@@ -1,0 +1,139 @@
+
+  
+.wrapper-1{
+  margin-bottom: 60px;
+}
+  .wrapper-2{
+    padding :30px;
+    text-align:center;
+  }
+  .wrapper-2 h1{
+    font-family: 'Gotham Bold', serif;
+      font-size:35px;
+    color:#023047 ;
+    margin:0;
+    margin-bottom:20px;
+  }
+  .wrapper-2 p{
+    margin:0;
+    font-size:25px;
+    color:#01497c;
+    font-family: 'Gotham Light', serif;
+    
+  }
+
+
+  /* SuccessPageStyles.css */
+
+.successPage-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+  }
+  
+  .successPage-box {
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    padding: 25px 20px 25px 50px;
+    
+  }
+  
+  .successPage-heading {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .successPage-icon {
+    margin-right: 10px;
+   
+  }
+  
+  .successPage-heading-text {
+    margin: 0; /* Reset the default margin for h2 */
+    font-family: 'Gotham Medium', serif;
+  }
+  
+  .successPage-subheading-text {
+    margin-bottom: 10px;
+    font-family: 'Gotham Light', serif;
+  }
+  
+  .successPage-button {
+    background-color: rgb(48, 44, 44);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  @media (max-width:760px){
+    .wrapper-2 h1{
+        font-family: 'Gotham Bold';
+      
+        font-size:27px;
+      color:#023047 ;
+      margin:0;
+      margin-bottom:10px;
+    }
+    .wrapper-2 p{
+      margin:0;
+      font-size:12px;
+      color:#01497c;
+      font-family: 'Gotham Light';
+      
+    }
+    .successPage-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        
+      }
+      .successPage-box {
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 15px;
+        padding: 10px 10px 10px 20px;
+        
+      }
+
+      .successPage-button {
+        background-color: rgb(48, 44, 44);
+        font-size: 15px;
+        color: #fff;
+        border: none;
+        padding: 7px 14px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .successPage-subheading-text {
+        margin-bottom: 10px;
+        font-family: 'Gotham Light';
+        font-size: 15px !important;
+      }
+      .successPage-heading-text {
+        margin: 0; /* Reset the default margin for h2 */
+        font-family: 'Gotham Medium';
+        font-size: 18px !important;
+      }
+
+
+    
+  }

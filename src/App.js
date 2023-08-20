@@ -6,6 +6,7 @@ import { BrowserRouter , Route, Routes } from 'react-router-dom';
 import HomePage from './Pages/HomePage';
 import AboutUsPage from './Pages/AboutUsPage';
 import TermsAndConditionsPage from './Pages/T&CPage';
+import SubmitSuccessPage from './Pages/SubmitSuccessPage';
 
 function App() {
   return (
@@ -16,7 +17,7 @@ function App() {
       <Route exact path="/" element={<HomePage/>} />
       <Route exact path='/about' element={<AboutUsPage/>}/>
       <Route exact path='privacyPolicy' element= {<TermsAndConditionsPage/>}/>
-      <Route exact path='success' element= {<TermsAndConditionsPage/>}/>
+      <Route exact path='success' element= {<SubmitSuccessPage/>}/>
     </Routes>
     
     </BrowserRouter>

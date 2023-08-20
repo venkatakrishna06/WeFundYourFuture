@@ -1,24 +1,28 @@
 import React from "react";
 import './TrustedPartners.css';
-
+import hdfc from '../assets/hdfc.png'
+import avanse from '../assets/avanse.png'
+import incred from '../assets/incred.png'
+import auxilo from '../assets/auxilo.png'
+import mpower from '../assets/mpower.png'
 function TrustedPartners() {
 
     const trustedPartners = [
         {
-            'partnerLogo' : 'https://unicreds.com/_next/image?url=https%3A%2F%2Fdi2vt7hcm6vs0.cloudfront.net%2Fv2%2Fpages%2FPartners%2FHDFC.jpg&w=640&q=75'
+            'partnerLogo' : hdfc
         }
         ,{
-            'partnerLogo': 'https://unicreds.com/_next/image?url=https%3A%2F%2Fdi2vt7hcm6vs0.cloudfront.net%2Fv2%2Fpages%2FPartners%2FAvanse.jpg&w=640&q=75'
+            'partnerLogo': avanse
         },{
-            'partnerLogo':'https://unicreds.com/_next/image?url=https%3A%2F%2Fdi2vt7hcm6vs0.cloudfront.net%2Fv2%2Fpages%2FPartners%2FInCred.jpg&w=640&q=75'
+            'partnerLogo':incred
         },
         
         {
-            'partnerLogo':'https://unicreds.com/_next/image?url=https%3A%2F%2Fdi2vt7hcm6vs0.cloudfront.net%2Fv2%2Fpages%2FPartners%2FProdigy.jpg&w=640&q=75'
+            'partnerLogo':auxilo
         },
 
         {
-            'partnerLogo':'https://unicreds.com/_next/image?url=https%3A%2F%2Fdi2vt7hcm6vs0.cloudfront.net%2Fv2%2Fpages%2FPartners%2FMPower.jpg&w=640&q=75'
+            'partnerLogo':mpower
         }
 
 

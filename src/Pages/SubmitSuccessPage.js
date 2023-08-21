@@ -26,7 +26,7 @@ function SubmitSuccessPage(){
 </svg></div>
           <h2 className="successPage-heading-text">Phone</h2>
         </div>
-        <div className="successPage-subheading-text">Call us for any kind of requirement like booking or partnership</div>
+        <div className="successPage-subheading-text">Call us for any kind of assistance</div>
         <a href="tel:+918977523525">
         <button className="successPage-button">+918977523525</button></a>
       </div>

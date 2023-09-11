@@ -44,7 +44,7 @@
 .float {
     margin: 0;
     padding: 0;
-    padding-top: 10px;
+    
 }
 p {
     margin: 0;
@@ -97,7 +97,9 @@ p {
 .mb-0{
     font-size: 15px;
 }
-
+.card-text li{
+margin-top: 8px;
+}
 
 @media screen and (max-width: 768px) {
 
